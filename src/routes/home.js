@@ -1,9 +1,10 @@
 import React from "react";
+import Titulo from "../components/Titulo";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="bg-emerald-400">
+      <Titulo texto="Esta es la home" />
     </div>
   );
 }
