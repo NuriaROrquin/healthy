@@ -18,6 +18,6 @@
     "comma-dangle": ["error", "only-multiline"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": 0,
-    "object-curly-newline": ["error", "never"]
+    "object-curly-newline": "off"
   }
 }
