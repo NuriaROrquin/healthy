@@ -1,3 +1,62 @@
 @tailwind base;
+@layer base {
+  @font-face {
+    font-family: cairo-bold;
+    src: url("../public/fonts/Cairo-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: cairo-semibold;
+    src: url("../public/fonts/Cairo-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: cairo-regular;
+    src: url("../public/fonts/Cairo-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: cairo-light;
+    src: url("../public/fonts/Cairo-Light.ttf");
+  }
+
+  h1 {
+    @apply text-7xl font-cairo-bold text-white;
+  }
+
+  /* h2 {
+    @apply;
+  }
+
+  h3 {
+    @apply;
+  }
+
+  h4 {
+    @apply;
+  }
+
+  a,
+  p {
+    @apply;
+  }
+
+  span {
+    @apply;
+  }
+
+  b,
+  strong {
+    @apply;
+  }
+
+  button {
+    @apply;
+  } */
+
+  body {
+    @apply font-cairo-regular;
+  }
+}
 @tailwind components;
 @tailwind utilities;
