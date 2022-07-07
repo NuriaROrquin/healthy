@@ -1,10 +1,21 @@
 import React from "react";
-import Titulo from "../components/Titulo";
+import BannerContainer from "../components/BannerContainer";
+import Nav from "../components/Nav";
+import SectionContainer from "../components/SectionContainer";
 
 export default function Home() {
   return (
-    <div className="bg-emerald-400">
-      <Titulo texto="Esta es la home" />
-    </div>
+    <>
+      <Nav />
+      <BannerContainer
+        titulo="Tenemos lo mejor para vos"
+        background="bg-home"
+      />
+      <SectionContainer>
+        <div>
+          Aca va el contenido de la seccion, ya sean cards, metricas, etc etc
+        </div>
+      </SectionContainer>
+    </>
   );
 }
