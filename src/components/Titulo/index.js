@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Titulo({ texto }) {
-  return <h1 className="bg-red-600 max-w-xs">{texto}</h1>;
+export default function Titulo({ texto, color }) {
+  return <h1 className={`${color}`}>{texto}</h1>;
 }
