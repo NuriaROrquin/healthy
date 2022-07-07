@@ -59,4 +59,79 @@
   }
 }
 @tailwind components;
+
+form div.form-group {
+  @apply relative my-6 w-full;
+}
+
+form div.form-group div {
+  @apply border-b;
+}
+
+form div.form-group-radio div {
+  @apply border-none;
+}
+
+form div.form-group small {
+  @apply text-red-700 font-bold;
+}
+
+form div.left-orientation {
+  @apply flex flex-col w-full sm:flex-row my-2 gap-8 items-baseline;
+}
+
+form div.left-orientation div.form-group {
+  @apply sm:w-1/6;
+}
+
+form div.center-orientation {
+  @apply flex flex-col md:flex-row justify-around md:justify-center md:items-center w-full;
+}
+
+form div.input-full div.form-group {
+  @apply w-full;
+}
+
+form div.form-group select {
+  @apply w-full;
+}
+
+form div.form-group select,
+form div.form-group option,
+form div.form-group input,
+form div.form-group .input-disabled {
+  @apply md:pl-2 block w-full text-base appearance-none focus:outline-none bg-transparent font-extralight text-teal;
+}
+
+form div.form-group i {
+  @apply absolute right-2 bottom-3 w-2 h-2 block border-l border-solid border-b border-teal transform -rotate-45 transition-all duration-150 ease-in-out;
+}
+
+form div.form-group label {
+  @apply absolute top-0 z-10 duration-300 text-teal;
+}
+
+form label.label-select,
+form input:focus-within ~ label,
+form input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+form input:focus-within ~ label,
+form select:focus-within ~ label {
+  @apply text-teal;
+}
+
+form input:checked + svg {
+  display: block;
+}
+
+.btn {
+  @apply px-7 py-2 border ml-0 w-max rounded-full border-solid outline-none transition-all hover:bg-transparent duration-200 ease-in-out text-center no-underline font-normal cursor-pointer;
+}
+
+.btn-teal {
+  @apply bg-teal border-white text-white hover:text-teal hover:border hover:border-teal;
+}
+
 @tailwind utilities;
