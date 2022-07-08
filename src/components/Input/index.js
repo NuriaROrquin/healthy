@@ -11,7 +11,7 @@ export function Input({
   ariaLabel,
 }) {
   return (
-    <div className="form-group">
+    <div className="form-group max-w-xs">
       <div>
         <input
           id={id}

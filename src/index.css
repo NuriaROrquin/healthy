@@ -21,7 +21,7 @@
   }
 
   h1 {
-    @apply text-7xl font-cairo-bold text-white;
+    @apply xl:text-6xl text-5xl font-cairo-bold text-white;
   }
 
   /* h2 {
@@ -132,6 +132,10 @@ form input:checked + svg {
 
 .btn-teal {
   @apply bg-teal border-white text-white hover:text-teal hover:border hover:border-teal;
+}
+
+.container-login {
+  @apply bg-white shadow-xl;
 }
 
 @tailwind utilities;
