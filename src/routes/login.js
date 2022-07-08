@@ -13,7 +13,7 @@ export default function Login() {
         <img
           src="/assets/logo.png"
           alt="Logo Healthy Care"
-          className="w-28 md:w-32 lg:w-44 mx-auto lg:mb-4"
+          className="w-28 md:w-32 lg:w-40 mx-auto lg:mb-4"
         />
         <Titulo texto="Iniciar Sesión" color="text-teal" />
         <form
