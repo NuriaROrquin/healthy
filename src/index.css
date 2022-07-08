@@ -114,7 +114,7 @@ form div.form-group label {
 form label.label-select,
 form input:focus-within ~ label,
 form input:not(:placeholder-shown) ~ label {
-  @apply transform scale-75 -translate-y-6;
+  @apply transform scale-75 -translate-y-6 -translate-x-3;
 }
 
 form input:focus-within ~ label,
