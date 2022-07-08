@@ -6,7 +6,10 @@ export default function Alimentacion() {
   return (
     <>
       <Nav />
-      <BannerContainer titulo="Alimentación" background="bg-alimentacion" />
+      <BannerContainer
+        titulo="Alimentación"
+        background="bg-alimentacion bg-right"
+      />
       <h1>Alimentacion</h1>
     </>
   );

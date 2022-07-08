@@ -9,7 +9,7 @@ export default function Home() {
       <Nav />
       <BannerContainer
         titulo="Tenemos lo mejor para vos"
-        background="bg-home"
+        background="bg-home bg-right"
       />
       <SectionContainer>
         <div>

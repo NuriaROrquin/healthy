@@ -8,20 +8,22 @@ export default function Metricas() {
   return (
     <>
       <Nav />
-      <BannerContainer titulo="Métricas" background="bg-metricas" />
-     
+      <BannerContainer titulo="Métricas" background="bg-metricas bg-center" />
+
       <SectionContainer>
+        <h1>Metricas</h1>
 
-      <h1>Metricas</h1>
-
-      <div class ="flex justify-around">
-
-        <div><Card /></div>
-        <div><Card /></div>
-        <div><Card /></div>
-
-      </div>
-
+        <div class="flex justify-around">
+          <div>
+            <Card />
+          </div>
+          <div>
+            <Card />
+          </div>
+          <div>
+            <Card />
+          </div>
+        </div>
       </SectionContainer>
     </>
   );
