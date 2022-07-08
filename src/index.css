@@ -21,7 +21,7 @@
   }
 
   h1 {
-    @apply xl:text-6xl text-5xl font-cairo-bold text-white;
+    @apply xl:text-6xl md:text-5xl text-4xl font-cairo-bold text-white;
   }
 
   /* h2 {
