@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#73A9AD",
-        teal: "#90C8AC",
+        green: "#2A9134",
+        teal: "#95c89a",
+        yellow: "#f5e8a4",
       },
       backgroundImage: () => ({
         home: "url('/public/assets/banner-home.jpg')",

@@ -14,7 +14,6 @@
   "plugins": ["react"],
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["error", "double"],
     "comma-dangle": ["error", "only-multiline"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": 0,
