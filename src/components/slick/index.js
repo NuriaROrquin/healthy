@@ -1,70 +1,36 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { useState } from "react";
+import ItemsCarousel from "react-items-carousel";
+import { ChevronLeft } from "../../icons/chevronLeft";
+import { ChevronRight } from "../../icons/chevronRight";
 
 export default function Carrousel() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const chevronWidth = 40;
   return (
-    <div>
-      <h2> Responsive </h2>
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-      </Slider>
+    <div style={{ padding: `0 ${chevronWidth}px` }}>
+      <ItemsCarousel
+        requestToChangeActive={setActiveItemIndex}
+        activeItemIndex={activeItemIndex}
+        numberOfCards={3}
+        gutter={20}
+        leftChevron={
+          <button className="rounded-full bg-teal w-8 absolute h-8 flex justify-center items-center">
+            <ChevronLeft />
+          </button>
+        }
+        rightChevron={
+          <button className="rounded-full bg-teal w-8 absolute h-8 flex justify-center items-center">
+            <ChevronRight />
+          </button>
+        }
+        outsideChevron
+        chevronWidth={chevronWidth}
+      >
+        <div style={{ height: 200, background: "#EEE" }}>First card</div>
+        <div style={{ height: 200, background: "#EEE" }}>Second card</div>
+        <div style={{ height: 200, background: "#EEE" }}>Third card</div>
+        <div style={{ height: 200, background: "#EEE" }}>Fourth card</div>
+      </ItemsCarousel>
     </div>
   );
-};
+}

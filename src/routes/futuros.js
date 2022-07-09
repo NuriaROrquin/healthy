@@ -18,14 +18,9 @@ export default function Futuros() {
           Qué estas esperando? Reservá un turno y comenzá ya a sentirte más
           saludable!{" "}
         </h3>
-        
-        
-        <h2> Multiple items </h2>
-        <Carrousel/>
-      
-        
 
-        
+        <h2> Multiple items </h2>
+        <Carrousel />
       </SectionContainer>
     </>
   );
