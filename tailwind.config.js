@@ -23,6 +23,9 @@ module.exports = {
       transformOrigin: {
         0: "0%",
       },
+      minHeight: {
+        96: "24rem",
+      },
     },
   },
   plugins: [],

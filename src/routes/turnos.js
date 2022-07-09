@@ -11,9 +11,9 @@ export default function Turnos() {
       <BannerContainer titulo="Turnos" background="bg-turnos bg-center" />
       <h1>Turnos</h1>
       <SectionContainer>
-        <h3 className="text-center mb-24 text-3xl ">
+        <h2 className="text-center mb-24 text-5xl text-teal font-cairo-bold">
           ¡Conocé todas las actividades que tenemos para vos!
-        </h3>
+        </h2>
         <div className="flex justify-around flex-wrap gap-2 gap-y-24">
           <Card
             image="/assets/spinning.jpg"
@@ -59,7 +59,7 @@ export default function Turnos() {
 
           <Card
             image="/assets/zumba.jpg"
-            description="Vení a bailar y divertirte en grupo con los mejores profesores del país. Conocé los lugares disponibles."
+            description="Vení a bailar y divertirte en grupo con los mejores profesores del país."
             title="ZUMBA"
           />
           <h3 className="text-center mb-24 text-3xl ">
