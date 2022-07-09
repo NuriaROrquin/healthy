@@ -1,5 +1,6 @@
 import React from "react";
 import BannerContainer from "../components/BannerContainer";
+import Carrousel from "../components/Carousel";
 import Nav from "../components/Nav";
 import SectionContainer from "../components/SectionContainer";
 
@@ -12,9 +13,7 @@ export default function Home() {
         background="bg-home bg-right"
       />
       <SectionContainer>
-        <div>
-          Aca va el contenido de la seccion, ya sean cards, metricas, etc etc
-        </div>
+        <Carrousel />
       </SectionContainer>
     </>
   );

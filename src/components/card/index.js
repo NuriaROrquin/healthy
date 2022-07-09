@@ -3,7 +3,7 @@ import React from "react";
 export default function Card({ image, description, title }) {
   return (
     <a href="#">
-      <div className="max-w-sm min-h-96 bg-teal rounded-lg border border-gray-200 shadow-md hover:scale-110 transition-all overflow-hidden">
+      <div className="max-w-sm min-h-96 bg-teal rounded-lg border border-gray-200 hover:scale-110 transition-all overflow-hidden shadow-xl">
         <div className="h-60 w-96">
           <img
             className="rounded-t-lg h-full object-cover w-full"

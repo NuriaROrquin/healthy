@@ -1,11 +1,8 @@
 import React from "react";
-import slick from "../components/slick";
 import BannerContainer from "../components/BannerContainer";
-import Card from "../components/card";
 import Nav from "../components/Nav";
 import SectionContainer from "../components/SectionContainer";
-import Slider from "react-slick";
-import Carrousel from "../components/slick";
+import Carrousel from "../components/Carousel";
 
 export default function Futuros() {
   return (
