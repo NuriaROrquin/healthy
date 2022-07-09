@@ -5,6 +5,25 @@ import SectionContainer from "../components/SectionContainer";
 import Carrousel from "../components/Carousel";
 
 export default function Futuros() {
+  const cards = [
+    {
+      id: 1,
+      card: <div style={{ height: 200, background: "#EEE" }}>First card</div>,
+    },
+    {
+      id: 2,
+      card: <div style={{ height: 200, background: "#EEE" }}>Second card</div>,
+    },
+    {
+      id: 3,
+      card: <div style={{ height: 200, background: "#EEE" }}>Third card</div>,
+    },
+    {
+      id: 4,
+      card: <div style={{ height: 200, background: "#EEE" }}>Fourth card</div>,
+    },
+  ];
+
   return (
     <>
       <Nav />
@@ -17,7 +36,7 @@ export default function Futuros() {
         </h3>
 
         <h2> Multiple items </h2>
-        <Carrousel />
+        <Carrousel cards={cards} numeroDeCardsPorSlide={3} />
       </SectionContainer>
     </>
   );

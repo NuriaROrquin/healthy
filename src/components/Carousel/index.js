@@ -1,17 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import { ChevronLeft } from "../../icons/chevronLeft";
 import { ChevronRight } from "../../icons/chevronRight";
 
-export default function Carrousel() {
+export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
-  const chevronWidth = 40;
+  const chevronWidth = 70;
+
   return (
-    <div style={{ padding: `0 ${chevronWidth}px` }}>
+    <div
+      className="carousel"
+      style={{
+        padding: `${window.innerWidth < 1400 ? `0 ${chevronWidth}px` : ""}`,
+      }}
+    >
       <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
-        numberOfCards={3}
+        numberOfCards={
+          window.innerWidth > 1080
+            ? numeroDeCardsPorSlide
+            : window.innerWidth > 720
+            ? 2
+            : 1
+        }
         gutter={20}
         leftChevron={
           <button className="rounded-full bg-teal w-8 absolute h-8 flex justify-center items-center">
@@ -25,11 +37,11 @@ export default function Carrousel() {
         }
         outsideChevron
         chevronWidth={chevronWidth}
+        infiniteLoop={false}
       >
-        <div style={{ height: 200, background: "#EEE" }}>First card</div>
-        <div style={{ height: 200, background: "#EEE" }}>Second card</div>
-        <div style={{ height: 200, background: "#EEE" }}>Third card</div>
-        <div style={{ height: 200, background: "#EEE" }}>Fourth card</div>
+        {cards.map((item, key) => {
+          return <div id={key}>{item.card}</div>;
+        })}
       </ItemsCarousel>
     </div>
   );

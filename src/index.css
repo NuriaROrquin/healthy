@@ -24,15 +24,15 @@
     @apply xl:text-6xl md:text-5xl text-4xl font-cairo-bold text-white;
   }
 
-  /* h2 {
-    @apply;
+  h2 {
+    @apply xl:text-5xl md:text-4xl text-3xl font-cairo-bold text-white;
   }
 
   h3 {
-    @apply;
+    @apply xl:text-4xl md:text-3xl text-2xl font-cairo-bold text-white;
   }
 
-  h4 {
+  /* h4 {
     @apply;
   }
 
@@ -136,6 +136,16 @@ form input:checked + svg {
 
 .container-login {
   @apply bg-white shadow-xl;
+}
+
+@media (max-width: 768px) {
+  .carousel div div div div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 @tailwind utilities;
