@@ -24,7 +24,6 @@ root.render(
         <Route path="alimentacion" element={<Alimentacion />} />
         <Route path="nivel" element={<Nivel />} />
         <Route path="futuros" element={<Futuros />} />
-        <Route path="mapeo" element={<Mapeo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
