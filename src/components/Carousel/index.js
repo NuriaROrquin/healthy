@@ -11,7 +11,7 @@ export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
     <div
       className="carousel"
       style={{
-        padding: `${window.innerWidth < 1400 ? `0 ${chevronWidth}px` : ""}`,
+        padding: `${window.innerWidth > 720 ? `0 ${chevronWidth}px` : ""}`,
       }}
     >
       <ItemsCarousel
@@ -35,7 +35,7 @@ export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
             <ChevronRight />
           </button>
         }
-        outsideChevron
+        outsideChevron={window.innerWidth > 720}
         chevronWidth={chevronWidth}
         infiniteLoop={false}
       >

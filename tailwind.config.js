@@ -13,6 +13,9 @@ module.exports = {
         alimentacion: "url('/public/assets/banner-alimentacion.png')",
         login: "url('/public/assets/banner-login.png')",
         metricas: "url('/public/assets/banner-metricas.png')",
+        natacion: "url('/public/assets/natacion2.jpg')",
+        yoga: "url('/public/assets/banner-yoga.png')",
+        gym: "url('/public/assets/banner-gym.png')",
       }),
       fontFamily: {
         "cairo-bold": "cairo-bold",

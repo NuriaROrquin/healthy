@@ -32,11 +32,11 @@
     @apply xl:text-4xl md:text-3xl text-2xl font-cairo-bold text-white;
   }
 
-  /* h4 {
-    @apply;
+  h4 {
+    @apply xl:text-2xl md:text-xl text-lg font-cairo-semibold text-white;
   }
 
-  a,
+  /* a,
   p {
     @apply;
   }
@@ -142,7 +142,6 @@ form input:checked + svg {
   .carousel div div div div div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
   }
