@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import GraphLine from "../components/GraphLine";
 import PieGraph from "../components/PieGraph";
 import { cantidadDeClasesTomadasPorMes } from "../utils";
+import { cantidadDePuntosAdquiridosPorMes } from "../utils";
 import { TituloSeccion } from "../components/Titulo";
 
 export default function Metricas() {
@@ -98,7 +99,7 @@ export default function Metricas() {
           <div className="mt-12">
             <GraphLine
               titulo="Cantidad de puntos adquiridos"
-              series={cantidadDeClasesTomadasPorMes}
+              series={cantidadDePuntosAdquiridosPorMes}
             />
           </div>
         </SectionContainer>
