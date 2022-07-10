@@ -1,4 +1,5 @@
 import React from "react";
+import { ButtonGreen } from "../components/Button";
 import { DatePicker, TimePicker } from "../components/DatePicker";
 import DropDownButton from "../components/DropDownButton";
 import SectionContainer from "../components/SectionContainer";
@@ -9,15 +10,15 @@ export default function Mapeo() {
   const profesores = [
     {
       value: "1",
-      label: "Juan Pérez",
+      label: "Juan Quintana",
     },
     {
       value: "2",
-      label: "Juan Pérez",
+      label: "Pedro Ferro",
     },
     {
       value: "3",
-      label: "Juan Pérez",
+      label: "Julian Casablanca",
     },
   ];
 
@@ -64,6 +65,9 @@ export default function Mapeo() {
           firstOption="Seleccione un profesor"
           options={profesores}
         />
+      </div>
+      <div className="flex justify-center align-middle m-5">
+        <ButtonGreen />
       </div>
 
       <SectionContainer></SectionContainer>
