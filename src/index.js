@@ -4,13 +4,10 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./routes/home";
-import Alimentacion from "./routes/alimentacion";
 import Login from "./routes/login";
 import Metricas from "./routes/metricas";
 import Nivel from "./routes/nivel";
 import Turnos from "./routes/turnos";
-import Futuros from "./routes/futuros";
-import Mapeo from "./routes/mapeo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,10 +18,7 @@ root.render(
         <Route path="/home" element={<Home />} />
         <Route path="turnos" element={<Turnos />} />
         <Route path="metricas" element={<Metricas />} />
-        <Route path="alimentacion" element={<Alimentacion />} />
         <Route path="nivel" element={<Nivel />} />
-        <Route path="futuros" element={<Futuros />} />
-        <Route path="mapeo" element={<Mapeo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

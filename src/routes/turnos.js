@@ -8,9 +8,15 @@ import SectionContainer from "../components/SectionContainer";
 import { TituloSeccion } from "../components/Titulo";
 import { Calendar } from "../icons/calendar";
 import Hour from "../icons/hour";
-import { actividades, profesores, sedesDeNatacion } from "../utils";
+import {
+  actividades,
+  cardsTurnosHistoricos,
+  profesores,
+  sedesDeNatacion,
+} from "../utils";
 import { SubmitButton } from "../components/SubmitButton";
 import { ButtonGreen } from "../components/Button";
+import Carrousel from "../components/Carousel";
 
 export default function Turnos() {
   const [sede, setSede] = useState();
@@ -86,6 +92,20 @@ export default function Turnos() {
         <div className="flex justify-center align-middle w-full my-8">
           <Map />
         </div>
+      </SectionContainer>
+
+      <SectionContainer>
+        <div className="justify-center">
+          <div className="justify-center">
+            <TituloSeccion color="text-teal" texto="Histórico " />
+          </div>
+        </div>
+
+        <Carrousel cards={cardsTurnosHistoricos} numeroDeCardsPorSlide={4} />
+        <h3 className="text-center mb-24 text-3xl ">
+          Qué estas esperando? Reservá un turno y comenzá ya a sentirte más
+          saludable!
+        </h3>
       </SectionContainer>
     </>
   );

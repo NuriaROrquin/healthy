@@ -372,6 +372,274 @@ export const cardsNoticias = [
     ),
   },
 ];
+export const cardsTurnosHistoricos = [
+  {
+    id: 1,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
+            <p className="text-gray-400 text-base mb-1">
+              <span className="font-bold text-teal">1-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Funcional</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">15:00</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Virtual</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Andres Angulo</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
+            <p className="text-gray-400 text-base mb-1">
+              <span className="font-bold text-teal">3-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Zumba</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">19:45</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Virtual</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Anabel Mendoza</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
+            <p className="text-gray-400 text-base mb-1">
+           <span className="font-bold text-teal">4-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Crossfit</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">09:30</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Virtual</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Luna Sanmartin</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Miercoles</div>
+            <p className="text-gray-400 text-base mb-1">
+            <span className="font-bold text-teal">5-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Natación</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">19:45</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Presencial</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Alexis Tejero</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Jueves</div>
+            <p className="text-gray-400 text-base mb-1">
+            <span className="font-bold text-teal">6-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Crossfit</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">09:30</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Presencial</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Juan Pablo</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1  min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">
+              Viernes
+            </div>
+            <p className="text-gray-400 text-base mb-1">
+              Día: <span className="font-bold">7-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Yoga</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">20:45</span>
+            </p>
+
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Virtual</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Nestor Campo</span>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
+            <p className="text-gray-400 text-base mb-1">
+              <span className="font-bold text-teal">8-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Funcional</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">15:45</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Presencial</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Andres Angulo</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
+            <p className="text-gray-400 text-base mb-1">
+              <span className="font-bold text-teal">10-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Zumba</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">19:45</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Virtual</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Juan Pablo</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    card: (
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
+        
+        <div className="px-6 py-4 flex flex-col justify-between">
+          <div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
+            <p className="text-gray-400 text-base mb-1">
+           <span className="font-bold text-teal">11-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Crossfit</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">11:45</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Modalidad: <span className="font-bold">Presencial</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Luna Sanmartin</span>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    ),
+  },
+  
+
+];
 
 export const cantidadDeClasesTomadasPorMes = [
   {
