@@ -95,10 +95,12 @@ export default function Metricas() {
             </div>
           </div>
 
-          <GraphLine
-            titulo="Cantidad de puntos adquiridos"
-            series={cantidadDeClasesTomadasPorMes}
-          />
+          <div className="mt-12">
+            <GraphLine
+              titulo="Cantidad de puntos adquiridos"
+              series={cantidadDeClasesTomadasPorMes}
+            />
+          </div>
         </SectionContainer>
       </div>
     </>
