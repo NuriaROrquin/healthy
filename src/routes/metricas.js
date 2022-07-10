@@ -4,6 +4,7 @@ import BannerContainer from "../components/BannerContainer";
 import SectionContainer from "../components/SectionContainer";
 import Card from "../components/Card";
 import GraphLine from "../components/GraphLine";
+import PieGraph from "../components/PieGraph";
 
 export default function Metricas() {
   const cantidadDeClasesTomadasPorMes = [
@@ -80,43 +81,64 @@ export default function Metricas() {
   return (
     <>
       <Nav />
-      <BannerContainer titulo="Métricas" background="bg-metricas bg-center" />
+      {/* <BannerContainer titulo="Métricas" background="bg-metricas bg-center" /> */}
 
       <SectionContainer>
         <h1>Metricas</h1>
 
-        <div className="flex justify-around">
+        <div className="flex justify-around flex-wrap gap-2 gap-y-24">
           <div>
             <Card
-              image="/assets/spinning.jpg"
-              description="Clases grupales con tutor. Conocé todas las sedes disponibles y elegí la que más te guste."
-              title="Logro 1"
+              image="/assets/lifting.webp"
+              description="¡Felicitaciones! Concluiste 15 turnos de mancuernas y maquinas este mes."
+              title="Desafio: Pesas Principiante"
             />
           </div>
           <div>
             <Card
-              image="/assets/spinning.jpg"
-              description="Clases grupales con tutor. Conocé todas las sedes disponibles y elegí la que más te guste."
-              title="Logro 2"
+              image="/assets/running-cinta.jpg"
+              description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+              title="Desafio: Running Principiante"
             />
           </div>
           <div>
             <Card
-              image="/assets/spinning.jpg"
-              description="Clases grupales con tutor. Conocé todas las sedes disponibles y elegí la que más te guste."
-              title="Logro 3"
+              image="/assets/natacion.webp"
+              description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+              title="Desafio: Natacion Intermedio"
             />
           </div>
         </div>
 
-        <div className="mt-24 flex justify-end">
-          <div className="w-2/3">
-            <GraphLine
-              titulo="Cantidad de clases tomadas"
-              series={cantidadDeClasesTomadasPorMes}
-            />
+        <div className="flex-wrap">
+          <div className="mt-24 flex gap-2 gap-y-24">
+            <div className="w-1/3">
+              <Card
+                image="/assets/15.webp"
+                description="¡Segui asi! Llevas un 15% de tu desafio completado"
+                title="Desafio: Spinning principiante"
+              />
+            </div>
+            <div className="w-2/3 justify-end">
+              <GraphLine
+                titulo="Cantidad de clases tomadas"
+                series={cantidadDeClasesTomadasPorMes}
+              />
+            </div>
           </div>
         </div>
+        <div>
+          <PieGraph />
+        </div>
+
+        <div>
+              <GraphLine
+                titulo="Cantidad de clases tomadas"
+                series={cantidadDeClasesTomadasPorMes}
+              />
+            </div>
+
+
       </SectionContainer>
     </>
   );
