@@ -376,7 +376,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 1,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -402,7 +402,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 2,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -428,7 +428,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 3,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -454,7 +454,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 4,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -480,7 +480,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 5,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -506,7 +506,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 6,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0  min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1  min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -535,7 +535,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 7,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -561,7 +561,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 8,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -587,7 +587,7 @@ export const cardsTurnosHistoricos = [
   {
     id: 9,
     card: (
-      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-0 min-h-100 justify-start">
+      <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
         
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
@@ -604,15 +604,7 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Profesor: <span className="font-bold">Juan Pablo</span>
             </p>
-            <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
-            </p>
-            <p className="text-gray-400 text-base mb-1">
-              Modalidad: <span className="font-bold">Virtual</span>
-            </p>
-            <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
-            </p>
+            s
           </div>
           
         </div>
