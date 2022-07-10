@@ -3,6 +3,8 @@ import BannerContainer from "../components/BannerContainer";
 import Nav from "../components/Nav";
 import SectionContainer from "../components/SectionContainer";
 import Carrousel from "../components/Carousel";
+import { cardsNoticias, cardsTurnos, cardsTurnosHistoricos } from "../utils";
+import { TituloSeccion } from "../components/Titulo";
 
 export default function Futuros() {
   const cards = [
@@ -28,16 +30,17 @@ export default function Futuros() {
     <>
       <Nav />
       <BannerContainer titulo="Turnos" background="bg-turnos bg-center" />
-      <h1>Turnos</h1>
+     
       <SectionContainer>
-        <h3 className="text-center mb-24 text-3xl">
-          Qué estas esperando? Reservá un turno y comenzá ya a sentirte más
-          saludable!{" "}
-        </h3>
+      <div className="justify-center">
+            <TituloSeccion color="text-teal"  texto="Histórico " />
+          </div>
+        
 
-        <h2> Multiple items </h2>
-        <Carrousel cards={cards} numeroDeCardsPorSlide={3} />
+          <Carrousel cards={cardsTurnosHistoricos} numeroDeCardsPorSlide={4} />
       </SectionContainer>
+
+
     </>
   );
 }
