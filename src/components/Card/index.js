@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Card({ image, description, title }) {
+export default function Card({ image, description, title, href }) {
   return (
-    <a href="#">
+    <a href={href}>
       <div className="max-w-sm min-h-96 bg-teal rounded-lg border border-gray-200 hover:scale-110 transition-all overflow-hidden shadow-xl">
         <div className="h-60 w-96">
           <img
