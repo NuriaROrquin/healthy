@@ -41,6 +41,7 @@ export default function GraphLine({ titulo, series }) {
     },
     plotOptions: {
       series: {
+        color: "#95c89a",
         showInLegend: false,
         pointIntervalUnit: "month",
         line: {
