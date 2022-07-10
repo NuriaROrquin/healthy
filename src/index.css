@@ -126,10 +126,6 @@ form input:checked + svg {
   display: block;
 }
 
-.btn {
-  @apply px-7 py-2 border ml-0 w-max rounded-full border-solid outline-none transition-all hover:bg-transparent duration-200 ease-in-out text-center no-underline font-normal cursor-pointer;
-}
-
 .btn-teal {
   @apply bg-teal border-white text-white hover:text-teal hover:border hover:border-teal;
 }
