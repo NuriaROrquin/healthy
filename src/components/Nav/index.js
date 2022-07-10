@@ -13,9 +13,6 @@ export default function Nav() {
         <li>
           <a href="/turnos">Turnos</a>
         </li>
-        <li>
-          <a href="/alimentacion">Alimentacion</a>
-        </li>
       </ul>
     </nav>
   );
