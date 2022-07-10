@@ -9,7 +9,7 @@ export default function Login() {
 
   return (
     <section className="flex w-full h-screen relative justify-center items-center lg:justify-end bg-login bg-cover p-8 bg-center">
-      <aside className="absolute lg:sticky container-login flex flex-col items-center justify-center py-6 px-6 lg:py-24 lg:px-12 rounded-xl w-10/12 md:w-9/12 lg:w-2/5 h-5/6 lg:h-full overflow-y-scroll">
+      <aside className="absolute lg:sticky container-login flex flex-col items-center justify-center py-6 px-6 lg:py-24 lg:px-12 rounded-xl w-10/12 md:w-9/12 lg:w-2/5 h-5/6 lg:h-full">
         <img
           src="/assets/logo.png"
           alt="Logo Healthy Care"
