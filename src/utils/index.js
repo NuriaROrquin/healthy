@@ -1,3 +1,6 @@
+import Anchor, { AnchorGreen } from "../components/Anchor";
+import Button from "../components/Button";
+
 export const cardsTurnos = [
   {
     id: 1,
@@ -24,14 +27,9 @@ export const cardsTurnos = [
               Profesor: <span className="font-bold">Juan Pablo</span>
             </p>
           </div>
-          <a
-            href="https://meet.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" px-6 py-2 mt-4 self-end bg-teal rounded-md text-white"
-          >
+          <AnchorGreen href="https://meet.google.com" newTab={true}>
             Ir a la clase
-          </a>
+          </AnchorGreen>
         </div>
       </div>
     ),
@@ -124,12 +122,7 @@ export const cardsTurnos = [
               Profesor: <span className="font-bold">Andres Angulo</span>
             </p>
           </div>
-          <button
-            disabled={true}
-            className="px-6 py-2 mt-4 self-end bg-teal rounded-md text-white disabled:bg-gray-300"
-          >
-            Ir a la clase
-          </button>
+          <AnchorGreen disabled={true}>Ir a la clase</AnchorGreen>
         </div>
       </div>
     ),
@@ -160,12 +153,7 @@ export const cardsTurnos = [
               Profesora: <span className="font-bold">Anabel Mendoza</span>
             </p>
           </div>
-          <button
-            disabled={true}
-            className="px-6 py-2 mt-4 self-end bg-teal rounded-md text-white disabled:bg-gray-300"
-          >
-            Ir a la clase
-          </button>
+          <AnchorGreen disabled={true}>Ir a la clase</AnchorGreen>
         </div>
       </div>
     ),
@@ -226,12 +214,7 @@ export const cardsTurnos = [
               Profesora: <span className="font-bold">Jana Jerez</span>
             </p>
           </div>
-          <button
-            disabled={true}
-            className="px-6 py-2 mt-4 self-end bg-teal rounded-md text-white disabled:bg-gray-300"
-          >
-            Ir a la clase
-          </button>
+          <AnchorGreen disabled={true}>Ir a la clase</AnchorGreen>
         </div>
       </div>
     ),
@@ -293,12 +276,7 @@ export const cardsTurnos = [
               Profesora: <span className="font-bold">Margarita Juarez</span>
             </p>
           </div>
-          <button
-            disabled={true}
-            className="px-6 py-2 mt-4 self-end bg-teal rounded-md text-white disabled:bg-gray-300"
-          >
-            Ir a la clase
-          </button>
+          <AnchorGreen disabled={true}>Ir a la clase</AnchorGreen>
         </div>
       </div>
     ),
@@ -331,12 +309,7 @@ export const cardsTurnos = [
               Profesor: <span className="font-bold">Nestor Campo</span>
             </p>
           </div>
-          <button
-            disabled={true}
-            className="px-6 py-2 mt-4 self-end bg-teal rounded-md text-white disabled:bg-gray-300"
-          >
-            Ir a la clase
-          </button>
+          <AnchorGreen disabled={true}>Ir a la clase</AnchorGreen>
         </div>
       </div>
     ),
@@ -357,9 +330,7 @@ export const cardsNoticias = [
               Que esperas para sumarte?
             </h4>
           </div>
-          <button className="px-6 py-2 mt-4 bg-white rounded-md text-teal max-w-xs hover:scale-110 transition">
-            ¡Quiero mi clase de natación!
-          </button>
+          <Button>¡Quiero mi clase de natación!</Button>
         </div>
       </div>
     ),
@@ -377,9 +348,7 @@ export const cardsNoticias = [
               Yoga fue la actividad favorita del mes de Junio.
             </h4>
           </div>
-          <button className="px-6 py-2 mt-4 bg-white rounded-md text-teal max-w-xs hover:scale-110 transition">
-            ¡Quiero mi clase de yoga!
-          </button>
+          <Button>¡Quiero mi clase de yoga!</Button>
         </div>
       </div>
     ),
@@ -397,9 +366,7 @@ export const cardsNoticias = [
               No le des mas vueltas! Empezá ahora.
             </h4>
           </div>
-          <button className="px-6 py-2 mt-4 bg-white rounded-md text-teal max-w-xs hover:scale-110 transition">
-            ¡Quiero un turno!
-          </button>
+          <Button>¡Quiero un turno!</Button>
         </div>
       </div>
     ),
