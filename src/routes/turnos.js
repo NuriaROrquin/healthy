@@ -29,7 +29,7 @@ export default function Turnos() {
 
           <Card
             image="/assets/crossfit.webp"
-            description="Clases grupales con tutor."
+            description="Si queres fortalecer tu figura de manera más rápida, no dudes en inscribirte a estas clases."
             title="CROSSFIT"
           />
 
@@ -41,19 +41,19 @@ export default function Turnos() {
 
           <Card
             image="/assets/natacion.webp"
-            description="Clases grupales o individuales con tutor."
+            description="Clases para principiantes y avanzados. Pileta libre y entrenamiento en equipo! "
             title="NATACION"
           />
 
           <Card
             image="/assets/aquagym.webp"
-            description="Clases grupales con tutor para todas las edades. "
+            description="Una actividad distinta dentro del agua para todas las edades. "
             title="AQUAGYM"
           />
 
           <Card
             image="/assets/yoga.jpg"
-            description="Clases grupales o individuales con tutor."
+            description="Conectá tu cuerpo, mente y espiritu para lograr el equilibrio y bienestar."
             title="YOGA"
           />
 
