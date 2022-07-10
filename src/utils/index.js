@@ -385,13 +385,16 @@ export const cardsTurnosHistoricos = [
               <span className="font-bold text-teal">1-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
+              Actividad: <span className="font-bold">Funcional</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">15:00</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Modalidad: <span className="font-bold">Virtual</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Prof: <span className="font-bold">Andres Angulo</span>
             </p>
           </div>
          
@@ -411,13 +414,16 @@ export const cardsTurnosHistoricos = [
               <span className="font-bold text-teal">3-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Zumba</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
               Horario: <span className="font-bold">19:45</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Modalidad: <span className="font-bold">Virtual</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Prof: <span className="font-bold">Anabel Mendoza</span>
             </p>
           </div>
          
@@ -437,13 +443,16 @@ export const cardsTurnosHistoricos = [
            <span className="font-bold text-teal">4-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
+              Actividad: <span className="font-bold">Crossfit</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">09:30</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Modalidad: <span className="font-bold">Virtual</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Prof: <span className="font-bold">Luna Sanmartin</span>
             </p>
           </div>
          
@@ -463,13 +472,16 @@ export const cardsTurnosHistoricos = [
             <span className="font-bold text-teal">5-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Natación</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
               Horario: <span className="font-bold">19:45</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Modalidad: <span className="font-bold">Virtual</span>
+              Modalidad: <span className="font-bold">Presencial</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Prof: <span className="font-bold">Alexis Tejero</span>
             </p>
           </div>
          
@@ -489,13 +501,16 @@ export const cardsTurnosHistoricos = [
             <span className="font-bold text-teal">6-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
+              Actividad: <span className="font-bold">Crossfit</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Modalidad: <span className="font-bold">Virtual</span>
+              Horario: <span className="font-bold">09:30</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Modalidad: <span className="font-bold">Presencial</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Juan Pablo</span>
             </p>
           </div>
          
@@ -517,14 +532,17 @@ export const cardsTurnosHistoricos = [
               Día: <span className="font-bold">7-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
+              Actividad: <span className="font-bold">Yoga</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Horario: <span className="font-bold">20:45</span>
             </p>
 
             <p className="text-gray-400 text-base mb-1">
               Modalidad: <span className="font-bold">Virtual</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Nestor Campo</span>
+              Prof: <span className="font-bold">Nestor Campo</span>
             </p>
           </div>
           
@@ -544,16 +562,19 @@ export const cardsTurnosHistoricos = [
               <span className="font-bold text-teal">8-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
+              Actividad: <span className="font-bold">Funcional</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Modalidad: <span className="font-bold">Virtual</span>
+              Horario: <span className="font-bold">15:45</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Modalidad: <span className="font-bold">Presencial</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Andres Angulo</span>
             </p>
           </div>
-          
+         
         </div>
       </div>
     ),
@@ -567,7 +588,10 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
             <p className="text-gray-400 text-base mb-1">
-             <span className="font-bold text-teal">10-Julio</span>
+              <span className="font-bold text-teal">10-Julio</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Actividad: <span className="font-bold">Zumba</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Horario: <span className="font-bold">19:45</span>
@@ -576,10 +600,10 @@ export const cardsTurnosHistoricos = [
               Modalidad: <span className="font-bold">Virtual</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Prof: <span className="font-bold">Juan Pablo</span>
             </p>
           </div>
-          
+         
         </div>
       </div>
     ),
@@ -593,24 +617,28 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">11-Julio</span>
+           <span className="font-bold text-teal">11-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Horario: <span className="font-bold">19:45</span>
+              Actividad: <span className="font-bold">Crossfit</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Modalidad: <span className="font-bold">Virtual</span>
+              Horario: <span className="font-bold">11:45</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-              Profesor: <span className="font-bold">Juan Pablo</span>
+              Modalidad: <span className="font-bold">Presencial</span>
             </p>
-            s
+            <p className="text-gray-400 text-base mb-1">
+              Prof: <span className="font-bold">Luna Sanmartin</span>
+            </p>
           </div>
-          
+         
         </div>
       </div>
     ),
   },
+  
+
 ];
 
 export const cantidadDeClasesTomadasPorMes = [
