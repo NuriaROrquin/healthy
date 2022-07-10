@@ -1,22 +1,23 @@
 import React from "react";
 
-export default function DropDownButton({
-  label,
-  value1,
-  value2,
-  value3,
-  value4,
-  value5,
-}) {
+export default function DropDownButton({ firstOption, options, label }) {
   return (
-    <div className="flex justify-center gap-2 bg-slate-800 w-min p-3 rounded-md">
-      <label for={label}>{label}:</label>
-      <select className="outline-none rounded-md">
-        <option value={value1}>{value1}</option>
-        <option value={value2}>{value2}</option>
-        <option value={value3}>{value3}</option>
-        <option value={value4}>{value4}</option>
-        <option value={value5}>{value5}</option>
+    <div class="max-w-2xl mx-auto">
+      <label
+        for="countries"
+        class="block mb-2 text-sm font-semibold text-gray-500 "
+      >
+        {label}
+      </label>
+      <select
+        id="countries"
+        class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-teal focus:border-teal block w-full p-2.5 items-center justify-center outline-none"
+      >
+        <option selected>{firstOption}</option>
+
+        {options.map((option) => (
+          <option value={option.value}>{option.label}</option>
+        ))}
       </select>
     </div>
   );

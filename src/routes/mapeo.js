@@ -7,6 +7,21 @@ import SectionContainer from "../components/SectionContainer";
 import { SubmitButton } from "../components/SubmitButton";
 
 export default function Mapeo() {
+  const profesores = [
+    {
+      value: "1",
+      label: "Juan Pérez",
+    },
+    {
+      value: "2",
+      label: "Juan Pérez",
+    },
+    {
+      value: "3",
+      label: "Juan Pérez",
+    },
+  ];
+
   return (
     <>
       <div className="flex justify-center align-middle m-10">
@@ -24,11 +39,8 @@ export default function Mapeo() {
       <div className="flex justify-center align-middle m-5">
         <DropDownButton
           label="Profesor"
-          value1="Joaquin Correa"
-          value2="Luciana Aymar"
-          value3="John Timberland"
-          value4="Michael Jackson"
-          value5="Pamela Anderson"
+          firstOption="Seleccione un profesor"
+          options={profesores}
         />
       </div>
 

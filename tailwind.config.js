@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         green: "#2A9134",
-        teal: "#95c89a",
         yellow: "#f5e8a4",
+        teal: "#95c89a",
         tealLight: "#BCD6D3",
       },
       backgroundImage: () => ({
