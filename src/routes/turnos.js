@@ -1,6 +1,6 @@
 import React from "react";
 import BannerContainer from "../components/BannerContainer";
-import Card from "../components/card";
+import Card from "../components/Card";
 import Nav from "../components/Nav";
 import SectionContainer from "../components/SectionContainer";
 

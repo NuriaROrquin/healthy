@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import BannerContainer from "../components/BannerContainer";
 import SectionContainer from "../components/SectionContainer";
-import Card from "../components/card";
+import Card from "../components/Card";
 import GraphLine from "../components/GraphLine";
 
 export default function Metricas() {
