@@ -1,10 +1,9 @@
 import React from "react";
-import BannerContainer from "../components/BannerContainer";
-import Card from "../components/Card";
+import { DatePicker, TimePicker } from "../components/DatePicker";
 import DropDownButton from "../components/DropDownButton";
-import Nav from "../components/Nav";
 import SectionContainer from "../components/SectionContainer";
-import { SubmitButton } from "../components/SubmitButton";
+import { Calendar } from "../icons/calendar";
+import Hour from "../icons/hour";
 
 export default function Mapeo() {
   const profesores = [
@@ -31,11 +30,34 @@ export default function Mapeo() {
           width="600"
           height="450"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+
+      <div className="w-full flex justify-center mt-4">
+        <div className="max-w-max" id="datePortal">
+          <DatePicker
+            label="Fecha"
+            placeholder="Seleccione una fecha"
+            icon={<Calendar />}
+            portal="datePortal"
+          />
+        </div>
+      </div>
+
+      <div className="w-full flex justify-center mt-4">
+        <div className="max-w-max" id="timePortal">
+          <TimePicker
+            label="Horario"
+            placeholder="Seleccione un horario"
+            icon={<Hour />}
+            portal="timePortal"
+          />
+        </div>
+      </div>
+
       <div className="flex justify-center align-middle m-5">
         <DropDownButton
           label="Profesor"
