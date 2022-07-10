@@ -396,6 +396,9 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Andres Angulo</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
          
         </div>
@@ -424,6 +427,9 @@ export const cardsTurnosHistoricos = [
             </p>
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Anabel Mendoza</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+             Estado: <span className="font-bold">Presente</span>
             </p>
           </div>
          
@@ -454,6 +460,9 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Luna Sanmartin</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
          
         </div>
@@ -483,6 +492,9 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Alexis Tejero</span>
             </p>
+            <p className="text-red-400 text-base mb-1">
+              Estado: <span className="font-bold">Ausente</span>
+            </p>
           </div>
          
         </div>
@@ -511,6 +523,9 @@ export const cardsTurnosHistoricos = [
             </p>
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Juan Pablo</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
             </p>
           </div>
          
@@ -544,6 +559,9 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Nestor Campo</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+             Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
           
         </div>
@@ -572,6 +590,9 @@ export const cardsTurnosHistoricos = [
             </p>
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Andres Angulo</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
             </p>
           </div>
          
@@ -602,6 +623,9 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Juan Pablo</span>
             </p>
+            <p className="text-red-400 text-base mb-1">
+              Estado: <span className="font-bold">Ausente</span>
+            </p>
           </div>
          
         </div>
@@ -630,6 +654,9 @@ export const cardsTurnosHistoricos = [
             </p>
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Luna Sanmartin</span>
+            </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
             </p>
           </div>
          
