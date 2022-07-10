@@ -49,6 +49,9 @@ export default function GraphLine({ titulo, series }) {
           width: 3,
         },
       },
+      areaspline: {
+        fillOpacity: 0.5,
+      },
     },
     series: series,
     rangeSelector: {
@@ -68,6 +71,38 @@ export default function GraphLine({ titulo, series }) {
           text: "All",
         },
       ],
+    },
+    navigator: {
+      maskFill: "rgba(149, 200, 154, 0.4)",
+      series: {
+        type: "line",
+        color: "rgba(149, 200, 154, 1)",
+        fillOpacity: 0.4,
+        dataGrouping: {
+          smoothed: false,
+        },
+        lineWidth: 2,
+        lineColor: "#BCD6D3",
+        fillColor: {
+          linearGradient: {
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1,
+          },
+          stops: [
+            [0, "#FF8000"],
+            [1, "#FFFF00"],
+          ],
+        },
+        marker: {
+          enabled: false,
+        },
+        shadow: true,
+      },
+      yAxis: {
+        reversed: true,
+      },
     },
   };
 
