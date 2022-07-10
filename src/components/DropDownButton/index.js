@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function DropDownButton({ firstOption, options, label }) {
+export default function DropDownButton({
+  firstOption,
+  options,
+  label,
+  disabled,
+  setOption,
+}) {
   return (
     <div class="max-w-2xl mx-auto">
       <label
@@ -12,7 +18,9 @@ export default function DropDownButton({ firstOption, options, label }) {
 
       <select
         id="countries"
-        class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-teal focus:border-teal block w-full p-2.5 items-center justify-center outline-none"
+        disabled={disabled}
+        className="bg-white border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-teal focus:border-teal block w-full p-2.5 items-center justify-center outline-none"
+        onChange={(e) => setOption(e)}
       >
         <option selected>{firstOption}</option>
 

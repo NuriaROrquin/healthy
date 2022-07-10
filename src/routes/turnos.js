@@ -1,74 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import BannerContainer from "../components/BannerContainer";
-import Card from "../components/Card";
+import { DatePicker, TimePicker } from "../components/DatePicker";
+import DropDownButton from "../components/DropDownButton";
+import Map from "../components/Map";
 import Nav from "../components/Nav";
 import SectionContainer from "../components/SectionContainer";
+import { TituloSeccion } from "../components/Titulo";
+import { Calendar } from "../icons/calendar";
+import Hour from "../icons/hour";
+import { actividades, profesores, sedesDeNatacion } from "../utils";
+import { SubmitButton } from "../components/SubmitButton";
+import { ButtonGreen } from "../components/Button";
 
 export default function Turnos() {
+  const [sede, setSede] = useState();
+  const [profesor, setProfesor] = useState();
+  const [actividad, setActividad] = useState();
+
   return (
     <>
       <Nav />
       <BannerContainer titulo="Turnos" background="bg-turnos bg-center" />
       <h1>Turnos</h1>
+
       <SectionContainer>
-        <h2 className="text-center mb-24 text-5xl text-teal font-cairo-bold">
-          ¡Conocé todas las actividades que tenemos para vos!
-        </h2>
-        <div className="flex justify-around flex-wrap gap-2 gap-y-24">
-          <Card
-            image="/assets/spinning.jpg"
-            description="Clases grupales con tutor. Conocé todas las sedes disponibles y elegí la que más te guste."
-            title="SPINNING"
-          />
+        <TituloSeccion texto="Agendá tu turno" color="text-teal" />
 
-          <Card
-            image="/assets/running.jpg"
-            description="Salí en grupo a recorrer las distintas calles de Buenos Aires."
-            title="RUNNING"
-          />
+        <div className="flex justify-between mb-8">
+          <div className="flex">
+            <div className="max-w-max" id="datePortal">
+              <DatePicker
+                label="Fecha"
+                placeholder="Seleccione una fecha"
+                icon={<Calendar />}
+                portal="datePortal"
+              />
+            </div>
+          </div>
 
-          <Card
-            image="/assets/crossfit.webp"
-            description="Si queres fortalecer tu figura de manera más rápida, no dudes en inscribirte a estas clases."
-            title="CROSSFIT"
-          />
+          <div className="flex">
+            <div className="max-w-max" id="timePortal">
+              <TimePicker
+                label="Horario"
+                placeholder="Seleccione un horario"
+                icon={<Hour />}
+                portal="timePortal"
+              />
+            </div>
+          </div>
 
-          <Card
-            image="/assets/funcional.png"
-            description="Hacé ejercicio sólo con tu peso! Clases grupales con tutor."
-            title="FUNCIONAL"
-          />
+          <div className="flex">
+            <DropDownButton
+              label="Sede"
+              firstOption="Seleccione una sede"
+              options={sedesDeNatacion}
+              setOption={setSede}
+            />
+          </div>
 
-          <Card
-            image="/assets/natacion.webp"
-            description="Clases para principiantes y avanzados. Pileta libre y entrenamiento en equipo! "
-            title="NATACION"
-          />
+          <div className="flex">
+            <DropDownButton
+              label="Actividad"
+              firstOption="Seleccione una actividad"
+              options={actividades}
+              setOption={setActividad}
+              disabled={!sede}
+            />
+          </div>
 
-          <Card
-            image="/assets/aquagym.webp"
-            description="Una actividad distinta dentro del agua para todas las edades. "
-            title="AQUAGYM"
-          />
+          <div className="flex">
+            <DropDownButton
+              label="Profesor"
+              firstOption="Seleccione un profesor"
+              options={profesores}
+              setOption={setProfesor}
+              disabled={!actividad}
+            />
+          </div>
+        </div>
 
-          <Card
-            image="/assets/yoga.jpg"
-            description="Conectá tu cuerpo, mente y espiritu para lograr el equilibrio y bienestar."
-            title="YOGA"
-          />
+        <ButtonGreen className="bg-teal w-full max-w-full">
+          Agendar Turno
+        </ButtonGreen>
 
-          <Card
-            image="/assets/zumba.jpg"
-            description="Vení a bailar y divertirte en grupo con los mejores profesores del país."
-            title="ZUMBA"
-          />
-          <h3 className="text-center mb-24 text-3xl ">
-            Qué estas esperando? Reservá un turno y comenzá ya a sentirte más
-            saludable!
-          </h3>
+        <div className="flex justify-center align-middle w-full my-8">
+          <Map />
         </div>
       </SectionContainer>
-      <SectionContainer></SectionContainer>
     </>
   );
 }
