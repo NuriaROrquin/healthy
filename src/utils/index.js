@@ -350,10 +350,12 @@ export const cardsNoticias = [
       <div className="w-full rounded-lg overflow-hidden shadow-md flex flex-col my-6 h-96 bg-natacion bg-cover bg-center">
         <div className="xl:w-1/3 p-8 flex flex-col h-full justify-around">
           <div className="gap-6 flex flex-col">
-            <h3 className="text-center">
+            <h3 className="text-center lg:text-start">
               Incorporamos más piletas de natación!
             </h3>
-            <h4 className="text-center">Que esperas para sumarte?</h4>
+            <h4 className="text-center lg:text-start">
+              Que esperas para sumarte?
+            </h4>
           </div>
           <button className="px-6 py-2 mt-4 bg-white rounded-md text-teal max-w-xs hover:scale-110 transition">
             ¡Quiero mi clase de natación!
@@ -368,10 +370,10 @@ export const cardsNoticias = [
       <div className="w-full rounded-lg overflow-hidden shadow-md flex flex-col my-6 h-96 bg-yoga bg-cover bg-top">
         <div className="xl:w-1/3 p-8 flex flex-col h-full justify-around">
           <div className="gap-6 flex flex-col">
-            <h3 className="text-center">
+            <h3 className="text-center lg:text-start">
               Las clases de Yoga fueron las mas elegidas
             </h3>
-            <h4 className="text-center">
+            <h4 className="text-center lg:text-start">
               Yoga fue la actividad favorita del mes de Junio.
             </h4>
           </div>
@@ -388,8 +390,10 @@ export const cardsNoticias = [
       <div className="w-full rounded-lg overflow-hidden shadow-md flex flex-col my-6 h-96 bg-gym bg-cover bg-center">
         <div className="xl:w-1/3 p-8 flex flex-col h-full justify-around">
           <div className="gap-6 flex flex-col">
-            <h3 className="text-center">Sumamos más gimnasios!</h3>
-            <h4 className="text-center">
+            <h3 className="text-center lg:text-start">
+              Sumamos más gimnasios!
+            </h3>
+            <h4 className="text-center lg:text-start">
               No le des mas vueltas! Empezá ahora.
             </h4>
           </div>
