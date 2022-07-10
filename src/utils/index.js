@@ -514,3 +514,64 @@ export const cantidadDePuntosAdquiridosPorMes = [
     ],
   },
 ];
+
+export const profesores = [
+  {
+    value: 1,
+    label: "Juan Pérez",
+  },
+  {
+    value: 2,
+    label: "Romeo Santos",
+  },
+  {
+    value: 3,
+    label: "Carolina Aguilar",
+  },
+];
+
+export const actividades = [
+  {
+    value: 1,
+    label: "Natación",
+  },
+  {
+    value: 2,
+    label: "Gimnasio",
+  },
+];
+
+export const sedesDeNatacion = [
+  {
+    value: 1,
+    label: "Gimnasio CAEP",
+  },
+  {
+    value: 2,
+    label: "Gimnasio Comunicaciones",
+  },
+  {
+    value: 3,
+    label: "Gimnasio CGEVP",
+  },
+  {
+    value: 4,
+    label: "Gimnasio Megatlon",
+  },
+  {
+    value: 5,
+    label: "Gimnasio SportClub",
+  },
+  {
+    value: 6,
+    label: "Gimnasio Open Park",
+  },
+  {
+    value: 7,
+    label: "Gimnasio UNLaM",
+  },
+  {
+    value: 8,
+    label: "Gimnasio Brisas",
+  },
+];
