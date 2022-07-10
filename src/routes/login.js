@@ -13,17 +13,17 @@ export default function Login() {
         <img
           src="/assets/logo.png"
           alt="Logo Healthy Care"
-          className="w-28 md:w-32 lg:w-40 mx-auto lg:mb-4"
+          className="w-28 md:w-32 2xl:w-40 mx-auto"
         />
         <Titulo texto="Iniciar Sesión" color="text-teal" />
         <form
           onSubmit={() => history("/home")}
-          className="flex flex-col mt-8 justify-center items-center"
+          className="flex flex-col mt-4 justify-center items-center"
         >
           <Input id="firstName" label="Email" type="email" required />
           <Input id="lastName" label="Contraseña" type="password" required />
 
-          <SubmitButton label="Ingresar" color="bg-teal mt-12" />
+          <SubmitButton label="Ingresar" color="bg-teal mt-8" />
         </form>
       </aside>
     </section>
