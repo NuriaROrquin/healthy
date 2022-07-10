@@ -30,23 +30,20 @@ export default function Futuros() {
     <>
       <Nav />
       <BannerContainer titulo="Turnos" background="bg-turnos bg-center" />
-     
+
       <SectionContainer>
-      <div className="justify-center">
+        <div className="justify-center">
           <div className="justify-center">
-            <TituloSeccion color="text-teal"  texto="Histórico " />
+            <TituloSeccion color="text-teal" texto="Histórico " />
           </div>
-      </div>
-        
+        </div>
 
-          <Carrousel cards={cardsTurnosHistoricos} numeroDeCardsPorSlide={4} />
-          <h3 className="text-center mb-24 text-3xl ">
-            Qué estas esperando? Reservá un turno y comenzá ya a sentirte más
-            saludable!
-          </h3>
+        <Carrousel cards={cardsTurnosHistoricos} numeroDeCardsPorSlide={4} />
+        <h3 className="text-center mb-24 text-3xl ">
+          Qué estas esperando? Reservá un turno y comenzá ya a sentirte más
+          saludable!
+        </h3>
       </SectionContainer>
-
-
     </>
   );
 }

@@ -16,9 +16,6 @@ export default function Nav() {
         <li>
           <a href="/alimentacion">Alimentacion</a>
         </li>
-        <li>
-          <a href="/mapeo">Mapeo</a>
-        </li>
       </ul>
     </nav>
   );

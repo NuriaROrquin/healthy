@@ -10,7 +10,6 @@ import Metricas from "./routes/metricas";
 import Nivel from "./routes/nivel";
 import Turnos from "./routes/turnos";
 import Futuros from "./routes/futuros";
-import Mapeo from "./routes/mapeo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
