@@ -3,6 +3,7 @@ import { ButtonGreen } from "../components/Button";
 import { DatePicker, TimePicker } from "../components/DatePicker";
 import DropDownButton from "../components/DropDownButton";
 import SectionContainer from "../components/SectionContainer";
+import { SubmitButton } from "../components/SubmitButton";
 import { Calendar } from "../icons/calendar";
 import Hour from "../icons/hour";
 
@@ -67,7 +68,7 @@ export default function Mapeo() {
         />
       </div>
       <div className="flex justify-center align-middle m-5">
-        <ButtonGreen />
+        <SubmitButton label="Agendar" color="bg-teal mt-8" />
       </div>
 
       <SectionContainer></SectionContainer>
