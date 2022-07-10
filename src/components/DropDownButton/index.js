@@ -9,6 +9,7 @@ export default function DropDownButton({ firstOption, options, label }) {
       >
         {label}
       </label>
+
       <select
         id="countries"
         class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-teal focus:border-teal block w-full p-2.5 items-center justify-center outline-none"
