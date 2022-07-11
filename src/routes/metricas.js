@@ -81,7 +81,7 @@ export default function Metricas() {
             <TituloSeccion color="text-teal" texto="Métricas" />
           </div>
 
-          <div className="flex flex-wrap justify-between items-center mt-4 gap-y-24">
+          <div className="flex flex-wrap justify-between mt-4 gap-y-24">
             <div className="flex w-4/12">
               <PieGraph
                 title="Porcentaje de actividades"

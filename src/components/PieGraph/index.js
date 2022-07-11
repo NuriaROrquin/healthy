@@ -29,6 +29,11 @@ export default function PieGraph({ data, title }) {
     },
     title: {
       text: title,
+      style: {
+        color: "#95c89a",
+        fontWeight: "bold",
+        fontSize: "1.5rem",
+      },
     },
     tooltip: {
       pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",

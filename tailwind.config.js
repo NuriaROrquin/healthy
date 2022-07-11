@@ -7,6 +7,7 @@ module.exports = {
         yellow: "#f5e8a4",
         teal: "#95c89a",
         tealLight: "#BCD6D3",
+        greenAqua: "#49a099",
       },
       backgroundImage: () => ({
         home: "url('/public/assets/banner-home.jpg')",
