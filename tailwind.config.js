@@ -32,6 +32,9 @@ module.exports = {
         96: "24rem",
         128: "26rem",
       },
+      boxShadow: {
+        card: "0px 0px 17px -1px rgba(102,102,102,0.47)",
+      },
     },
   },
   plugins: [],

@@ -7,16 +7,13 @@ export const DatePicker = ({
   label,
   placeholder,
   error,
-  selected,
-  onChange,
   helpText,
   disabled,
   portal,
-  a,
   icon,
+  date,
+  setDate,
 }) => {
-  const [date, setDate] = useState(new Date());
-
   return (
     <div class="max-w-2xl">
       <div className="block text-sm font-medium text-gray-primary mb-2">
@@ -37,6 +34,7 @@ export const DatePicker = ({
           dropdownMode="select"
           disabled={disabled}
           onChange={(date) => setDate(date)}
+          dateFormat="dd/MM/yyyy"
         />
       </div>
       {helpText && <span className="text-xs text-black-light">{helpText}</span>}
@@ -48,16 +46,13 @@ export const TimePicker = ({
   label,
   placeholder,
   error,
-  selected,
-  onChange,
   helpText,
   disabled,
   portal,
-  a,
   icon,
+  hour,
+  setHour,
 }) => {
-  const [date, setDate] = useState(new Date());
-
   return (
     <div class="max-w-2xl">
       <div className="block text-sm font-medium text-gray-primary mb-2">
@@ -72,8 +67,8 @@ export const TimePicker = ({
         <ReactDatePicker
           portalId={portal}
           placeholderText={placeholder}
-          selected={date}
-          onChange={(date) => setDate(date)}
+          selected={hour}
+          onChange={(hour) => setHour(hour)}
           showTimeSelect
           showTimeSelectOnly
           timeIntervals={60}
@@ -94,6 +89,7 @@ export const TimePicker = ({
             setHours(setMinutes(new Date(), 0), 22),
             setHours(setMinutes(new Date(), 0), 23),
           ]}
+          disabled={disabled}
         />
       </div>
       {helpText && <span className="text-xs text-black-light">{helpText}</span>}
