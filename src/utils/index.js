@@ -954,3 +954,68 @@ export const cardsDesafios = [
     ),
   },
 ];
+export const cardsDeBeneficios = [
+  {
+    id: 1,
+    image: "/assets/3m.png",
+    description:
+      "Apartir de 1000 puntos tenes 10% de descuento en todos los 3er Mileniodel pais.",
+    title: "10%",
+    href: "https://www.3m.com.ar/3M/es_AR/inicio/",
+  },
+  {
+    id: 2,
+    image: "/assets/DS.PNG",
+    description:
+      "Apartir de 1500 puntos tenes 20% de descuento en Dyamond System en su pagina o locales.",
+    title: "20%",
+    href: "https://www.diamondcomputacion.com.ar",
+  },
+  {
+    id: 3,
+    image: "/assets/crossfit.webp",
+    description:
+      "Apartir de 2000 puntos tenes 30% de descuento en Librearia Einstein.",
+    title: "30%",
+    href: "https://einsteinlibreria.com.ar/",
+  },
+  {
+    id: 4,
+    image: "/assets/funcional.png",
+    description: "Hacé ejercicio sólo con tu peso! Clases grupales con tutor.",
+    title: "FUNCIONAL",
+    href: "/turnos",
+  },
+  {
+    id: 5,
+    image: "/assets/natacion.webp",
+    description:
+      "Clases para principiantes y avanzados. Pileta libre y entrenamiento en equipo!",
+    title: "NATACION",
+    href: "/turnos",
+  },
+  {
+    id: 6,
+    image: "/assets/aquagym.webp",
+    description:
+      "Una actividad distinta dentro del agua para todas las edades.",
+    title: "AQUAGYM",
+    href: "/turnos",
+  },
+  {
+    id: 7,
+    image: "/assets/yoga.jpg",
+    description:
+      "Conectá tu cuerpo, mente y espiritu para lograr el equilibrio y bienestar.",
+    title: "YOGA",
+    href: "/turnos",
+  },
+  {
+    id: 8,
+    image: "/assets/zumba.jpg",
+    description:
+      "Vení a bailar y divertirte en grupo con los mejores profesores del país.",
+    title: "ZUMBA",
+    href: "/turnos",
+  },
+];

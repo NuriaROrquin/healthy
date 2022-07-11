@@ -8,6 +8,7 @@ import Login from "./routes/login";
 import Metricas from "./routes/metricas";
 import Nivel from "./routes/nivel";
 import Turnos from "./routes/turnos";
+import Beneficios from "./routes/beneficios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="turnos" element={<Turnos />} />
         <Route path="metricas" element={<Metricas />} />
         <Route path="nivel" element={<Nivel />} />
+        <Route path="beneficios" element={< Beneficios />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
