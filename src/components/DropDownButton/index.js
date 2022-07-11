@@ -6,9 +6,10 @@ export default function DropDownButton({
   label,
   disabled,
   setOption,
+  className,
 }) {
   return (
-    <div class="max-w-2xl mx-auto">
+    <div class={`max-w-2xl mx-auto ${className}`}>
       <label
         for="countries"
         class="block mb-2 text-sm font-semibold text-gray-500 "

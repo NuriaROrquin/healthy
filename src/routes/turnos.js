@@ -45,62 +45,69 @@ export default function Turnos() {
         <TituloSeccion texto="Agendá tu turno" color="text-teal" />
 
         <div className="flex flex-col p-8 bg-white shadow-card rounded-lg my-8">
-          <div className="flex justify-between mb-8">
-            <div className="flex">
-              <div className="max-w-max" id="datePortal">
-                <DatePicker
-                  label="Fecha"
-                  placeholder="Seleccione una fecha"
-                  icon={<Calendar />}
-                  portal="datePortal"
-                  date={date}
-                  setDate={setDate}
-                />
+          <div className="flex justify-between mb-8 flex-col items-center xl:flex-row gap-y-4 gap-x-6">
+            <div className="flex w-full gap-x-6 xl:w-2/5 flex-col gap-y-4 md:flex-row">
+              <div className="flex w-full">
+                <div className="w-full" id="datePortal">
+                  <DatePicker
+                    label="Fecha"
+                    placeholder="Seleccione una fecha"
+                    icon={<Calendar />}
+                    portal="datePortal"
+                    date={date}
+                    setDate={setDate}
+                  />
+                </div>
+              </div>
+
+              <div className="flex w-full">
+                <div className="w-full" id="timePortal">
+                  <TimePicker
+                    label="Horario"
+                    placeholder="Seleccione un horario"
+                    icon={<Hour />}
+                    portal="timePortal"
+                    hour={hour}
+                    setHour={setHour}
+                    disabled={!date}
+                  />
+                </div>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="max-w-max" id="timePortal">
-                <TimePicker
-                  label="Horario"
-                  placeholder="Seleccione un horario"
-                  icon={<Hour />}
-                  portal="timePortal"
-                  hour={hour}
-                  setHour={setHour}
-                  disabled={!date}
-                />
-              </div>
-            </div>
-
-            <div className="flex">
+            <div className="flex w-full xl:w-1/5">
               <DropDownButton
                 label="Sede"
                 firstOption="Seleccione una sede"
                 options={sedesDeNatacion}
                 setOption={setSede}
                 disabled={!hour}
+                className="w-full !min-w-full"
               />
             </div>
 
-            <div className="flex">
-              <DropDownButton
-                label="Actividad"
-                firstOption="Seleccione una actividad"
-                options={actividades}
-                setOption={setActividad}
-                disabled={!sede}
-              />
-            </div>
+            <div className="flex w-full gap-x-6 xl:w-2/5 flex-col gap-y-4 md:flex-row">
+              <div className="flex w-full">
+                <DropDownButton
+                  label="Actividad"
+                  firstOption="Seleccione una actividad"
+                  options={actividades}
+                  setOption={setActividad}
+                  disabled={!sede}
+                  className="w-full !min-w-full"
+                />
+              </div>
 
-            <div className="flex">
-              <DropDownButton
-                label="Profesor"
-                firstOption="Seleccione un profesor"
-                options={profesores}
-                setOption={setProfesor}
-                disabled={!actividad}
-              />
+              <div className="flex w-full">
+                <DropDownButton
+                  label="Profesor"
+                  firstOption="Seleccione un profesor"
+                  options={profesores}
+                  setOption={setProfesor}
+                  disabled={!actividad}
+                  className="w-full !min-w-full"
+                />
+              </div>
             </div>
           </div>
 
