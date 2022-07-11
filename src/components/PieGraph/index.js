@@ -26,7 +26,6 @@ export default function PieGraph({ data, title }) {
       plotBorderWidth: null,
       plotShadow: false,
       type: "pie",
-      margin: [-20, 0, 0, 0],
     },
     title: {
       text: title,

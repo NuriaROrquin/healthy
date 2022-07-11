@@ -12,6 +12,7 @@ import {
 import { cantidadDePuntosAdquiridosPorMes } from "../utils";
 import { TituloSeccion } from "../components/Titulo";
 import Carrousel from "../components/Carousel";
+import ProgressBar from "../components/ProgressBar";
 
 export default function Metricas() {
   const porcentajeDeActividades = [
@@ -64,7 +65,7 @@ export default function Metricas() {
             <TituloSeccion color="text-teal" texto="Métricas" />
           </div>
 
-          <div className="flex flex-wrap 2xl:justify-between mt-4 gap-y-8">
+          <div className="flex flex-wrap 2xl:justify-between mt-4 gap-y-8 mb-8">
             <div className="flex w-full 2xl:w-4/12 items-center justify-center">
               <PieGraph
                 title="Porcentaje de actividades"
@@ -87,7 +88,22 @@ export default function Metricas() {
             </div>
 
             <div className="flex w-full 2xl:w-4/12 justify-end">
-              Aca va la card de puntos santi
+              <div className="w-full shadow-md rounded-lg bg-white p-8 flex items-center flex-col gap-y-4">
+                <h4 className="text-greenAqua font-cairo-bold text-3xl">
+                  Logro a Desbloquear
+                </h4>
+
+                <p>
+                  Llega a las 100 clases en cada actividad y sumá 500 puntos
+                </p>
+
+                <div className="flex flex-col w-full gap-y-2">
+                  <span className="text-teal text-md font-cairo-semibold">
+                    Natación
+                  </span>
+                  <ProgressBar number={50} />
+                </div>
+              </div>
             </div>
           </div>
         </SectionContainer>
