@@ -26,6 +26,8 @@ export default function PieGraph({ data, title }) {
       plotBorderWidth: null,
       plotShadow: false,
       type: "pie",
+      height: "100%",
+      margin: [-20, 0, 0, 0],
     },
     title: {
       text: title,
@@ -50,6 +52,9 @@ export default function PieGraph({ data, title }) {
       },
     },
     series: data,
+    credits: {
+      enabled: false,
+    },
   };
 
   return <HighchartsReact highcharts={Highcharts} options={options} />;

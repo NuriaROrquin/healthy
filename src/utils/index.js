@@ -1,5 +1,6 @@
 import Anchor, { AnchorGreen } from "../components/Anchor";
 import Button from "../components/Button";
+import Card from "../components/Card";
 
 export const cardsTurnos = [
   {
@@ -427,7 +428,7 @@ export const cardsTurnosHistoricos = [
               Prof: <span className="font-bold">Anabel Mendoza</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-             Estado: <span className="font-bold">Presente</span>
+              Estado: <span className="font-bold">Presente</span>
             </p>
           </div>
         </div>
@@ -550,7 +551,7 @@ export const cardsTurnosHistoricos = [
               Prof: <span className="font-bold">Nestor Campo</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
-             Estado: <span className="font-bold">Presente</span>
+              Estado: <span className="font-bold">Presente</span>
             </p>
           </div>
         </div>
@@ -915,5 +916,41 @@ export const cardsDeActividades = [
       "Vení a bailar y divertirte en grupo con los mejores profesores del país.",
     title: "ZUMBA",
     href: "/turnos",
+  },
+];
+
+export const cardsDesafios = [
+  {
+    id: 1,
+    card: (
+      <Card
+        image="/assets/lifting.webp"
+        description="¡Felicitaciones! Concluiste 15 turnos de mancuernas y maquinas este mes."
+        title="Desafio: Pesas Principiante"
+        noscale
+      />
+    ),
+  },
+  {
+    id: 2,
+    card: (
+      <Card
+        image="/assets/running-cinta.jpg"
+        description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+        title="Desafio: Running Principiante"
+        noscale
+      />
+    ),
+  },
+  {
+    id: 3,
+    card: (
+      <Card
+        image="/assets/natacion.webp"
+        description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+        title="Desafio: Natacion Intermedio"
+        noscale
+      />
+    ),
   },
 ];

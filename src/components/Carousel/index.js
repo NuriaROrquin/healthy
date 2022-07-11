@@ -12,6 +12,7 @@ export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
       className="carousel"
       style={{
         padding: `${window.innerWidth > 720 ? `0 ${chevronWidth}px` : ""}`,
+        overflow: "hidden",
       }}
     >
       <ItemsCarousel
