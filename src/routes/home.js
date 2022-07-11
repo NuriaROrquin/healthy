@@ -19,13 +19,13 @@ export default function Home() {
           <Carrousel cards={cardsNoticias} numeroDeCardsPorSlide={1} />
         </SectionContainer>
 
-        <SectionContainer>
+        <SectionContainer color="bg-teal">
           <div className="flex">
-            <TituloSeccion color="text-teal" texto="Hola Michael!" />
+            <TituloSeccion color="text-white" texto="Hola Michael!" />
           </div>
 
-          <div className="flex md:px-16 w-full flex-wrap justify-between">
-            <div className="flex flex-col bg-red py-8 px-4 shadow-lg w-full lg:w-1/3 rounded-lg mt-8 justify-between">
+          <div className="flex md:px-16 w-full flex-wrap justify-between ">
+            <div className="flex flex-col bg-red py-8 px-4 shadow-lg w-full lg:w-1/3 rounded-lg mt-8 justify-between bg-white">
               <img
                 src="/assets/user.jpeg"
                 alt="imagen"
@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col bg-red py-8 px-4 shadow-lg w-full lg:w-[28%] rounded-lg mt-8">
+            <div className="flex flex-col bg-red py-8 px-4 shadow-lg w-full lg:w-[28%] rounded-lg mt-8 bg-white">
               <div className="flex justify-center flex-col items-center mb-4">
                 <h4 className="text-6xl text-greenAqua font-cairo-bold">
                   2515
@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col bg-red py-8 px-4 shadow-lg w-full lg:w-1/3 rounded-lg mt-8 justify-between">
+            <div className="flex flex-col bg-red py-8 px-4 shadow-lg w-full lg:w-1/3 rounded-lg mt-8 justify-between bg-white">
               <h4 className="text-4xl text-greenAqua font-cairo-bold pl-4 mb-4">
                 Turnos de Hoy
               </h4>

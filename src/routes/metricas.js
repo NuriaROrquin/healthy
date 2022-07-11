@@ -94,7 +94,7 @@ export default function Metricas() {
                 </h4>
 
                 <p>
-                  Llega a las 100 clases en cada actividad y sumá 500 puntos
+                  Llega a las 50 clases en cada actividad y sumá 1500 puntos
                 </p>
 
                 <div className="flex flex-col w-full gap-y-2">
@@ -102,7 +102,28 @@ export default function Metricas() {
                     Natación
                   </span>
                   <ProgressBar number={50} />
+                  <span className="text-teal text-md font-cairo-semibold">
+                    Crossfit
+                  </span>
+                  <ProgressBar number={60} />
+                  <span className="text-teal text-md font-cairo-semibold">
+                    Running
+                  </span>
+                  <ProgressBar number={40} />
+                  <span className="text-teal text-md font-cairo-semibold">
+                    Yoga
+                  </span>
+                  <ProgressBar number={10} />
+                  <span className="text-teal text-md font-cairo-semibold">
+                    Zumba
+                  </span>
+                  <ProgressBar number={10} />
+                  <span className="text-teal text-md font-cairo-semibold">
+                    Funcional
+                  </span>
+                  <ProgressBar number={80} />
                 </div>
+
               </div>
             </div>
           </div>
