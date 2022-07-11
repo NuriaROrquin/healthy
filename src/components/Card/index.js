@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Card({ image, description, title, href, noscale }) {
+export default function Card({ image, description, title, href, noscale, newblank }) {
   return (
-    <a href={href}>
+    <a href={href} target={newblank && "_blank"}>
       <div
         className={`max-w-sm min-h-96 bg-teal rounded-lg border border-gray-200 ${
           !noscale && "hover:scale-110"

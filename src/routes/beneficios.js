@@ -12,7 +12,7 @@ export default function Beneficios() {
     <div >
       <Nav />
       <SectionContainer>
-          <h2 className="text-center mb-24 text-5xl text-teal font-cairo-bold">
+          <h2 className="text-center mb-24 text-5xl text-teal font-cairo-bold mt-10">
             ¡Descuentos imperdibles canjeando tus puntos!
           </h2>
           <div className="flex justify-around flex-wrap gap-2 gap-y-24">
@@ -24,6 +24,7 @@ export default function Beneficios() {
                   description={actividad.description}
                   title={actividad.title}
                   href={actividad.href}
+                  newblank={actividad.newblank}
                 />
               );
             })}
