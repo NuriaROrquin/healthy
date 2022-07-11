@@ -31,6 +31,7 @@ module.exports = {
       minHeight: {
         96: "24rem",
         128: "26rem",
+        20: "5rem",
       },
       boxShadow: {
         card: "0px 0px 17px -1px rgba(102,102,102,0.47)",
