@@ -173,13 +173,6 @@ form input:checked + svg {
   @apply flex flex-col;
 }
 
-#marketingActionPortal .react-datepicker-popper {
-  background-color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
-  transform: translate(-6px, -312px) !important;
-  inset: 0px auto auto 0px !important;
-}
-
 .react-datepicker__current-month {
   @apply ml-2.5 text-lg font-semibold text-gray-800 hidden;
 }

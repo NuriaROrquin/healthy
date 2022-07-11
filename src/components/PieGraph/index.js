@@ -26,9 +26,16 @@ export default function PieGraph({ data, title }) {
       plotBorderWidth: null,
       plotShadow: false,
       type: "pie",
+      height: "100%",
+      margin: [-20, 0, 0, 0],
     },
     title: {
       text: title,
+      style: {
+        color: "#95c89a",
+        fontWeight: "bold",
+        fontSize: "1.5rem",
+      },
     },
     tooltip: {
       pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
@@ -45,6 +52,9 @@ export default function PieGraph({ data, title }) {
       },
     },
     series: data,
+    credits: {
+      enabled: false,
+    },
   };
 
   return <HighchartsReact highcharts={Highcharts} options={options} />;

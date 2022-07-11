@@ -1,5 +1,6 @@
 import Anchor, { AnchorGreen } from "../components/Anchor";
 import Button from "../components/Button";
+import Card from "../components/Card";
 
 export const cardsTurnos = [
   {
@@ -372,12 +373,12 @@ export const cardsNoticias = [
     ),
   },
 ];
+
 export const cardsTurnosHistoricos = [
   {
     id: 1,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
@@ -396,8 +397,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Andres Angulo</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -406,7 +409,6 @@ export const cardsTurnosHistoricos = [
     id: 2,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
@@ -425,8 +427,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Anabel Mendoza</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -435,12 +439,11 @@ export const cardsTurnosHistoricos = [
     id: 3,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-           <span className="font-bold text-teal">4-Julio</span>
+              <span className="font-bold text-teal">4-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -454,8 +457,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Luna Sanmartin</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -464,12 +469,13 @@ export const cardsTurnosHistoricos = [
     id: 4,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
-            <div className="font-bold text-xl mb-2 text-gray-500">Miercoles</div>
+            <div className="font-bold text-xl mb-2 text-gray-500">
+              Miercoles
+            </div>
             <p className="text-gray-400 text-base mb-1">
-            <span className="font-bold text-teal">5-Julio</span>
+              <span className="font-bold text-teal">5-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Natación</span>
@@ -483,8 +489,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Alexis Tejero</span>
             </p>
+            <p className="text-red-400 text-base mb-1">
+              Estado: <span className="font-bold">Ausente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -493,12 +501,11 @@ export const cardsTurnosHistoricos = [
     id: 5,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Jueves</div>
             <p className="text-gray-400 text-base mb-1">
-            <span className="font-bold text-teal">6-Julio</span>
+              <span className="font-bold text-teal">6-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -512,8 +519,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Juan Pablo</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -522,12 +531,9 @@ export const cardsTurnosHistoricos = [
     id: 6,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1  min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
-            <div className="font-bold text-xl mb-2 text-gray-500">
-              Viernes
-            </div>
+            <div className="font-bold text-xl mb-2 text-gray-500">Viernes</div>
             <p className="text-gray-400 text-base mb-1">
               Día: <span className="font-bold">7-Julio</span>
             </p>
@@ -544,8 +550,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Nestor Campo</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-          
         </div>
       </div>
     ),
@@ -554,7 +562,6 @@ export const cardsTurnosHistoricos = [
     id: 7,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
@@ -573,8 +580,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Andres Angulo</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -583,7 +592,6 @@ export const cardsTurnosHistoricos = [
     id: 8,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
@@ -602,8 +610,10 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Juan Pablo</span>
             </p>
+            <p className="text-red-400 text-base mb-1">
+              Estado: <span className="font-bold">Ausente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
@@ -612,12 +622,11 @@ export const cardsTurnosHistoricos = [
     id: 9,
     card: (
       <div className="max-w-sm rounded-lg overflow-hidden shadow-md flex flex-col my-1 min-h-100 justify-start">
-        
         <div className="px-6 py-4 flex flex-col justify-between">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-           <span className="font-bold text-teal">11-Julio</span>
+              <span className="font-bold text-teal">11-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -631,14 +640,14 @@ export const cardsTurnosHistoricos = [
             <p className="text-gray-400 text-base mb-1">
               Prof: <span className="font-bold">Luna Sanmartin</span>
             </p>
+            <p className="text-gray-400 text-base mb-1">
+              Estado: <span className="font-bold">Presente</span>
+            </p>
           </div>
-         
         </div>
       </div>
     ),
   },
-  
-
 ];
 
 export const cantidadDeClasesTomadasPorMes = [
@@ -841,5 +850,107 @@ export const sedesDeNatacion = [
   {
     value: 8,
     label: "Gimnasio Brisas",
+  },
+];
+
+export const cardsDeActividades = [
+  {
+    id: 1,
+    image: "/assets/spinning.jpg",
+    description:
+      "Clases grupales con tutor. Conocé todas las sedes disponibles y elegí la que más te guste.",
+    title: "SPINNING",
+    href: "/turnos",
+  },
+  {
+    id: 2,
+    image: "/assets/running.jpg",
+    description:
+      "Salí en grupo a recorrer las distintas calles de Buenos Aires.",
+    title: "RUNNING",
+    href: "/turnos",
+  },
+  {
+    id: 3,
+    image: "/assets/crossfit.webp",
+    description:
+      "Si queres fortalecer tu figura de manera más rápida, no dudes en inscribirte a estas clases.",
+    title: "CROSSFIT",
+    href: "/turnos",
+  },
+  {
+    id: 4,
+    image: "/assets/funcional.png",
+    description: "Hacé ejercicio sólo con tu peso! Clases grupales con tutor.",
+    title: "FUNCIONAL",
+    href: "/turnos",
+  },
+  {
+    id: 5,
+    image: "/assets/natacion.webp",
+    description:
+      "Clases para principiantes y avanzados. Pileta libre y entrenamiento en equipo!",
+    title: "NATACION",
+    href: "/turnos",
+  },
+  {
+    id: 6,
+    image: "/assets/aquagym.webp",
+    description:
+      "Una actividad distinta dentro del agua para todas las edades.",
+    title: "AQUAGYM",
+    href: "/turnos",
+  },
+  {
+    id: 7,
+    image: "/assets/yoga.jpg",
+    description:
+      "Conectá tu cuerpo, mente y espiritu para lograr el equilibrio y bienestar.",
+    title: "YOGA",
+    href: "/turnos",
+  },
+  {
+    id: 8,
+    image: "/assets/zumba.jpg",
+    description:
+      "Vení a bailar y divertirte en grupo con los mejores profesores del país.",
+    title: "ZUMBA",
+    href: "/turnos",
+  },
+];
+
+export const cardsDesafios = [
+  {
+    id: 1,
+    card: (
+      <Card
+        image="/assets/lifting.webp"
+        description="¡Felicitaciones! Concluiste 15 turnos de mancuernas y maquinas este mes."
+        title="Desafio: Pesas Principiante"
+        noscale
+      />
+    ),
+  },
+  {
+    id: 2,
+    card: (
+      <Card
+        image="/assets/running-cinta.jpg"
+        description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+        title="Desafio: Running Principiante"
+        noscale
+      />
+    ),
+  },
+  {
+    id: 3,
+    card: (
+      <Card
+        image="/assets/natacion.webp"
+        description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+        title="Desafio: Natacion Intermedio"
+        noscale
+      />
+    ),
   },
 ];

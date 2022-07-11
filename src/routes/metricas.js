@@ -4,9 +4,14 @@ import SectionContainer from "../components/SectionContainer";
 import Card from "../components/Card";
 import GraphLine from "../components/GraphLine";
 import PieGraph from "../components/PieGraph";
-import { cantidadDeClasesTomadasPorMes } from "../utils";
+import {
+  cantidadDeClasesTomadasPorMes,
+  cardsDesafios,
+  cardsTurnos,
+} from "../utils";
 import { cantidadDePuntosAdquiridosPorMes } from "../utils";
 import { TituloSeccion } from "../components/Titulo";
+import Carrousel from "../components/Carousel";
 
 export default function Metricas() {
   const porcentajeDeActividades = [
@@ -52,55 +57,38 @@ export default function Metricas() {
             <TituloSeccion color="text-teal mb-4" texto="Desafios" />
           </div>
 
-          <div className="flex justify-between flex-wrap gap-y-24">
-            <div>
-              <Card
-                image="/assets/lifting.webp"
-                description="¡Felicitaciones! Concluiste 15 turnos de mancuernas y maquinas este mes."
-                title="Desafio: Pesas Principiante"
-              />
-            </div>
-            <div>
-              <Card
-                image="/assets/running-cinta.jpg"
-                description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
-                title="Desafio: Running Principiante"
-              />
-            </div>
-            <div>
-              <Card
-                image="/assets/natacion.webp"
-                description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
-                title="Desafio: Natacion Intermedio"
-              />
-            </div>
-          </div>
+          <Carrousel cards={cardsDesafios} numeroDeCardsPorSlide={3} />
         </SectionContainer>
         <SectionContainer>
           <div className="flex">
             <TituloSeccion color="text-teal" texto="Métricas" />
           </div>
 
-          <div className="flex flex-wrap justify-between items-center mt-4 gap-y-24">
-            <div className="flex w-4/12">
+          <div className="flex flex-wrap 2xl:justify-between mt-4 gap-y-8">
+            <div className="flex w-full 2xl:w-4/12 items-center justify-center">
               <PieGraph
                 title="Porcentaje de actividades"
                 data={porcentajeDeActividades}
               />
             </div>
-            <div className="flex w-7/12 justify-end">
+
+            <div className="flex w-full 2xl:w-7/12 justify-end">
               <GraphLine
                 titulo="Cantidad de clases tomadas"
                 series={cantidadDeClasesTomadasPorMes}
               />
             </div>
-          </div>
 
-          <div className="mt-12">
-            <GraphLine
-              titulo="Cantidad de puntos adquiridos"
-              series={cantidadDePuntosAdquiridosPorMes}
-            />
+            <div className="flex w-full 2xl:w-7/12">
+              <GraphLine
+                titulo="Cantidad de puntos adquiridos"
+                series={cantidadDePuntosAdquiridosPorMes}
+              />
+            </div>
+
+            <div className="flex w-full 2xl:w-4/12 justify-end">
+              Aca va la card de puntos santi
+            </div>
           </div>
         </SectionContainer>
       </div>

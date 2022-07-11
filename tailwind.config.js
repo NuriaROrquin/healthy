@@ -7,6 +7,7 @@ module.exports = {
         yellow: "#f5e8a4",
         teal: "#95c89a",
         tealLight: "#BCD6D3",
+        greenAqua: "#49a099",
       },
       backgroundImage: () => ({
         home: "url('/public/assets/banner-home.jpg')",
@@ -30,6 +31,9 @@ module.exports = {
       minHeight: {
         96: "24rem",
         128: "26rem",
+      },
+      boxShadow: {
+        card: "0px 0px 17px -1px rgba(102,102,102,0.47)",
       },
     },
   },

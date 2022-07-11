@@ -21,6 +21,11 @@ export default function GraphLine({ titulo, series }) {
     },
     title: {
       text: titulo,
+      style: {
+        color: "#95c89a",
+        fontWeight: "bold",
+        fontSize: "1.5rem",
+      },
     },
     credits: {
       enabled: false,
@@ -41,7 +46,7 @@ export default function GraphLine({ titulo, series }) {
     },
     plotOptions: {
       series: {
-        color: "#95c89a",
+        color: "#49a099",
         showInLegend: false,
         pointIntervalUnit: "month",
         line: {
@@ -73,16 +78,16 @@ export default function GraphLine({ titulo, series }) {
       ],
     },
     navigator: {
-      maskFill: "rgba(149, 200, 154, 0.4)",
+      maskFill: "rgba(109, 196, 189, 0.4)",
       series: {
         type: "line",
-        color: "rgba(149, 200, 154, 1)",
+        color: "rgba(73,160,153, 1)",
         fillOpacity: 0.4,
         dataGrouping: {
           smoothed: false,
         },
         lineWidth: 2,
-        lineColor: "#BCD6D3",
+        lineColor: "#49a099",
         fillColor: {
           linearGradient: {
             x1: 0,
