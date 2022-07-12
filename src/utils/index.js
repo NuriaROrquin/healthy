@@ -966,7 +966,7 @@ export const cardsDeBeneficios = [
   },
   {
     id: 2,
-    image: "/assets/DS.PNG",
+    image: "/assets/ds.PNG",
     description:
       "Accedes a 20% de descuento en Diamond System.",
     title: "Con 1500 puntos",
@@ -975,7 +975,7 @@ export const cardsDeBeneficios = [
   },
   {
     id: 3,
-    image: "/assets/Einstein.jpg",
+    image: "/assets/einstein.jpg",
     description:
       "Accedes a 30% de descuento en Libreria Einstein.",
     title: "Con 2000 puntos",
