@@ -1077,8 +1077,8 @@ export const cardsDesafios = [
     id: 3,
     card: (
       <Card
-        image="/assets/natacion.jpeg"
-        description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+        image="/assets/natacion.webp"
+        description="¡Felicitaciones! Concretaste 15 clases de natacion en este mes."
         title="Desafio: Natacion Intermedio"
         noscale
       />
