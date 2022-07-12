@@ -4,7 +4,7 @@ export default function Card({ image, description, title, href, noscale }) {
   return (
     <a href={href}>
       <div
-        className={`max-w-sm min-h-96 bg-teal rounded-lg border border-gray-200 ${
+        className={`max-w-sm min-h-96 bg-orange rounded-lg border border-gray-200 ${
           !noscale && "hover:scale-110"
         } transition-all overflow-hidden shadow-xl`}
       >

@@ -5,9 +5,9 @@ module.exports = {
       colors: {
         green: "#2A9134",
         yellow: "#f5e8a4",
-        teal: "#95c89a",
-        tealLight: "#BCD6D3",
+        orange: "#f5a051",
         greenAqua: "#49a099",
+        tealLight: "#8FC7AC",
       },
       backgroundImage: () => ({
         home: "url('/public/assets/banner-home.jpg')",

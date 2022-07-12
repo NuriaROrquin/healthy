@@ -30,7 +30,7 @@ export default function PieGraph({ data, title }) {
     title: {
       text: title,
       style: {
-        color: "#95c89a",
+        color: "#f5a051",
         fontWeight: "bold",
         fontSize: "1.5rem",
       },

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DatePicker, TimePicker } from "../components/DatePicker";
 import DropDownButton from "../components/DropDownButton";
 import Map from "../components/Map";
@@ -36,13 +36,17 @@ export default function Turnos() {
     }
   };
 
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+  }, [openModal]);
+
   return (
-    <div className="relative">
+    <div className={`relative ${openModal && "bg-black bg-opacity-50"}`}>
       <Nav />
       <h1>Turnos</h1>
 
       <SectionContainer>
-        <TituloSeccion texto="Agendá tu turno" color="text-teal" />
+        <TituloSeccion texto="Agendá tu turno" color="text-orange" />
 
         <div className="flex flex-col p-8 bg-white shadow-card rounded-lg my-8">
           <div className="flex justify-between mb-8 flex-col items-center xl:flex-row gap-y-4 gap-x-6">
@@ -126,7 +130,7 @@ export default function Turnos() {
 
           <ButtonGreen
             onClick={() => handleAgendarTurno()}
-            className="bg-teal w-full !max-w-full"
+            className="bg-orange w-full !max-w-full"
           >
             Agendar Turno
           </ButtonGreen>
@@ -140,7 +144,7 @@ export default function Turnos() {
       <SectionContainer>
         <div className="justify-center">
           <div className="justify-center">
-            <TituloSeccion color="text-teal" texto="Histórico " />
+            <TituloSeccion color="text-orange" texto="Histórico " />
           </div>
         </div>
 
@@ -158,7 +162,7 @@ export default function Turnos() {
             src="/assets/success-icon.png"
             className="w-28 h-28"
           />
-          <h4 className="text-teal mt-8">
+          <h4 className="text-orange mt-8">
             Tu turno se ha agendado correctamente!
           </h4>
 

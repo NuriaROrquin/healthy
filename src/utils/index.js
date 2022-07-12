@@ -1,5 +1,5 @@
 import Anchor, { AnchorGreen } from "../components/Anchor";
-import Button from "../components/Button";
+import Button, { ButtonGreen } from "../components/Button";
 import Card from "../components/Card";
 
 export const cardsTurnos = [
@@ -16,7 +16,7 @@ export const cardsTurnos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Crossfit</div>
             <p className="text-gray-400 text-base mb-1">
-              Día: <span className="font-bold text-teal">HOY</span>
+              Día: <span className="font-bold text-orange">HOY</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Horario: <span className="font-bold">19:45</span>
@@ -331,7 +331,7 @@ export const cardsNoticias = [
               Que esperas para sumarte?
             </h4>
           </div>
-          <Button>¡Quiero mi clase de natación!</Button>
+          <ButtonGreen>¡Quiero mi clase de natación!</ButtonGreen>
         </div>
       </div>
     ),
@@ -349,7 +349,7 @@ export const cardsNoticias = [
               Yoga fue la actividad favorita del mes de Junio.
             </h4>
           </div>
-          <Button>¡Quiero mi clase de yoga!</Button>
+          <ButtonGreen>¡Quiero mi clase de yoga!</ButtonGreen>
         </div>
       </div>
     ),
@@ -367,7 +367,7 @@ export const cardsNoticias = [
               No le des mas vueltas! Empezá ahora.
             </h4>
           </div>
-          <Button>¡Quiero un turno!</Button>
+          <ButtonGreen>¡Quiero un turno!</ButtonGreen>
         </div>
       </div>
     ),
@@ -383,7 +383,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">1-Julio</span>
+              <span className="font-bold text-orange">1-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Funcional</span>
@@ -413,7 +413,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">3-Julio</span>
+              <span className="font-bold text-orange">3-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Zumba</span>
@@ -443,7 +443,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">4-Julio</span>
+              <span className="font-bold text-orange">4-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -475,7 +475,7 @@ export const cardsTurnosHistoricos = [
               Miercoles
             </div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">5-Julio</span>
+              <span className="font-bold text-orange">5-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Natación</span>
@@ -505,7 +505,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Jueves</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">6-Julio</span>
+              <span className="font-bold text-orange">6-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -566,7 +566,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">8-Julio</span>
+              <span className="font-bold text-orange">8-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Funcional</span>
@@ -596,7 +596,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">10-Julio</span>
+              <span className="font-bold text-orange">10-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Zumba</span>
@@ -626,7 +626,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">11-Julio</span>
+              <span className="font-bold text-orange">11-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>

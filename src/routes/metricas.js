@@ -55,75 +55,80 @@ export default function Metricas() {
       <div className="pt-12">
         <SectionContainer>
           <div className="flex">
-            <TituloSeccion color="text-teal mb-4" texto="Desafios" />
+            <TituloSeccion color="text-greenAqua mb-4" texto="Desafios" />
           </div>
 
           <Carrousel cards={cardsDesafios} numeroDeCardsPorSlide={3} />
         </SectionContainer>
         <SectionContainer>
           <div className="flex">
-            <TituloSeccion color="text-teal" texto="Métricas" />
+            <TituloSeccion color="text-greenAqua" texto="Métricas" />
           </div>
 
           <div className="flex flex-wrap 2xl:justify-between mt-4 gap-y-8 mb-8">
-            <div className="flex w-full 2xl:w-4/12 items-center justify-center">
-              <PieGraph
-                title="Porcentaje de actividades"
-                data={porcentajeDeActividades}
-              />
+            <div className="flex w-full 2xl:w-5/12 items-center justify-center">
+              <div className="w-full shadow-md rounded-lg bg-white p-8 flex items-center flex-col gap-y-4 h-full">
+                <span className="text-orange text-2xl font-cairo-bold">
+                  Porcentaje de actividades realizadas
+                </span>
+                <PieGraph data={porcentajeDeActividades} />
+              </div>
             </div>
 
-            <div className="flex w-full 2xl:w-7/12 justify-end">
-              <GraphLine
-                titulo="Cantidad de clases tomadas"
-                series={cantidadDeClasesTomadasPorMes}
-              />
+            <div className="flex w-full 2xl:w-6/12 justify-end">
+              <div className="w-full shadow-md rounded-lg bg-white p-8 flex items-center flex-col gap-y-4">
+                <GraphLine
+                  titulo="Cantidad de clases tomadas"
+                  series={cantidadDeClasesTomadasPorMes}
+                />
+              </div>
             </div>
 
             <div className="flex w-full 2xl:w-7/12">
-              <GraphLine
-                titulo="Cantidad de puntos adquiridos"
-                series={cantidadDePuntosAdquiridosPorMes}
-              />
+              <div className="w-full shadow-md rounded-lg bg-white p-8 flex items-center flex-col gap-y-4">
+                <GraphLine
+                  titulo="Cantidad de puntos adquiridos"
+                  series={cantidadDePuntosAdquiridosPorMes}
+                />
+              </div>
             </div>
 
             <div className="flex w-full 2xl:w-4/12 justify-end">
               <div className="w-full shadow-md rounded-lg bg-white p-8 flex items-center flex-col gap-y-4">
-                <h4 className="text-greenAqua font-cairo-bold text-3xl">
+                <h4 className="text-orange font-cairo-bold text-3xl">
                   Logro a Desbloquear
                 </h4>
 
-                <p>
+                <p className="text-greenAqua">
                   Llega a las 50 clases en cada actividad y sumá 1500 puntos
                 </p>
 
                 <div className="flex flex-col w-full gap-y-2">
-                  <span className="text-teal text-md font-cairo-semibold">
+                  <span className="text-orange text-md font-cairo-bold">
                     Natación
                   </span>
                   <ProgressBar number={50} />
-                  <span className="text-teal text-md font-cairo-semibold">
+                  <span className="text-orange text-md font-cairo-bold">
                     Crossfit
                   </span>
                   <ProgressBar number={60} />
-                  <span className="text-teal text-md font-cairo-semibold">
+                  <span className="text-orange text-md font-cairo-bold">
                     Running
                   </span>
                   <ProgressBar number={40} />
-                  <span className="text-teal text-md font-cairo-semibold">
+                  <span className="text-orange text-md font-cairo-bold">
                     Yoga
                   </span>
                   <ProgressBar number={10} />
-                  <span className="text-teal text-md font-cairo-semibold">
+                  <span className="text-orange text-md font-cairo-bold">
                     Zumba
                   </span>
-                  <ProgressBar number={10} />
-                  <span className="text-teal text-md font-cairo-semibold">
+                  <ProgressBar number={15} />
+                  <span className="text-orange text-md font-cairo-bold">
                     Funcional
                   </span>
                   <ProgressBar number={80} />
                 </div>
-
               </div>
             </div>
           </div>
