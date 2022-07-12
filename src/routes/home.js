@@ -1,4 +1,5 @@
 import React from "react";
+import BodyContainer from "../components/BodyContainer";
 import Card from "../components/Card";
 import Carrousel from "../components/Carousel";
 import Nav from "../components/Nav";
@@ -9,8 +10,7 @@ import { cardsDeActividades, cardsNoticias, cardsTurnos } from "../utils";
 
 export default function Home() {
   return (
-    <>
-      <Nav />
+    <BodyContainer>
       <div className="pt-12">
         <SectionContainer>
           <div className="flex">
@@ -148,6 +148,6 @@ export default function Home() {
           </div>
         </SectionContainer>
       </div>
-    </>
+    </BodyContainer>
   );
 }
