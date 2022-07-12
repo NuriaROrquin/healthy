@@ -14,6 +14,9 @@ export default function Nav() {
           <a href="/turnos">Turnos</a>
         </li>
         <li>
+          <a href="/beneficios">Beneficios</a>
+        </li>
+        <li>
           <a href="/user">
             <img
               src="/assets/user.jpeg"

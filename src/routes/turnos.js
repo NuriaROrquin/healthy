@@ -136,16 +136,14 @@ export default function Turnos() {
           </ButtonGreen>
         </div>
 
-        <div className="flex justify-center align-middle w-full my-8">
+        <div className="flex justify-center align-middle w-full mt-8">
           <Map />
         </div>
       </SectionContainer>
 
       <SectionContainer>
-        <div className="justify-center">
-          <div className="justify-center">
-            <TituloSeccion color="text-orange" texto="Histórico " />
-          </div>
+        <div className="flex mb-4">
+          <TituloSeccion color="text-orange" texto="Histórico de turnos" />
         </div>
 
         <Carrousel cards={cardsTurnosHistoricos} numeroDeCardsPorSlide={4} />
