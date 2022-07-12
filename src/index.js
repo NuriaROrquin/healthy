@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import Home from "./routes/home";
 import Login from "./routes/login";
 import Metricas from "./routes/metricas";
-import Nivel from "./routes/nivel";
 import Turnos from "./routes/turnos";
 import Beneficios from "./routes/beneficios";
 
@@ -19,8 +18,7 @@ root.render(
         <Route path="/home" element={<Home />} />
         <Route path="turnos" element={<Turnos />} />
         <Route path="metricas" element={<Metricas />} />
-        <Route path="nivel" element={<Nivel />} />
-        <Route path="beneficios" element={< Beneficios />} />
+        <Route path="beneficios" element={<Beneficios />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

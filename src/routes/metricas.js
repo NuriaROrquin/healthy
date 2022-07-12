@@ -13,6 +13,7 @@ import { cantidadDePuntosAdquiridosPorMes } from "../utils";
 import { TituloSeccion } from "../components/Titulo";
 import Carrousel from "../components/Carousel";
 import ProgressBar from "../components/ProgressBar";
+import BodyContainer from "../components/BodyContainer";
 
 export default function Metricas() {
   const porcentajeDeActividades = [
@@ -49,9 +50,7 @@ export default function Metricas() {
   ];
 
   return (
-    <>
-      <Nav />
-
+    <BodyContainer>
       <div className="pt-12">
         <SectionContainer>
           <div className="flex">
@@ -134,6 +133,6 @@ export default function Metricas() {
           </div>
         </SectionContainer>
       </div>
-    </>
+    </BodyContainer>
   );
 }
