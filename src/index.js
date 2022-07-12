@@ -8,13 +8,15 @@ import Login from "./routes/login";
 import Metricas from "./routes/metricas";
 import Turnos from "./routes/turnos";
 import Beneficios from "./routes/beneficios";
+import CommercialHome from "./routes/commercial-home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<CommercialHome />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="turnos" element={<Turnos />} />
         <Route path="metricas" element={<Metricas />} />

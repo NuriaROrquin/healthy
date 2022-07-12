@@ -3,7 +3,12 @@ import ItemsCarousel from "react-items-carousel";
 import { ChevronLeft } from "../../icons/chevronLeft";
 import { ChevronRight } from "../../icons/chevronRight";
 
-export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
+export default function Carrousel({
+  numeroDeCardsPorSlide,
+  cards,
+  insideChevron,
+  withoutPadding,
+}) {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 70;
 
@@ -11,7 +16,11 @@ export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
     <div
       className="carousel"
       style={{
-        padding: `${window.innerWidth > 720 ? `0 ${chevronWidth}px` : ""}`,
+        padding: `${
+          !withoutPadding && window.innerWidth > 720
+            ? `0 ${chevronWidth}px`
+            : ""
+        }`,
         overflow: "hidden",
       }}
     >
@@ -36,7 +45,7 @@ export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
             <ChevronRight />
           </button>
         }
-        outsideChevron={window.innerWidth > 720}
+        outsideChevron={insideChevron ? false : window.innerWidth > 720}
         chevronWidth={chevronWidth}
         infiniteLoop={false}
       >
