@@ -947,7 +947,7 @@ export const cardsDesafios = [
     card: (
       <Card
         image="/assets/natacion.webp"
-        description="¡Felicitaciones! Concluiste 12 turnos de running en cinta este mes."
+        description="¡Felicitaciones! Concretaste 15 clases de natacion en este mes."
         title="Desafio: Natacion Intermedio"
         noscale
       />
@@ -962,25 +962,23 @@ export const cardsDeBeneficios = [
       "Accedes a 10% de descuento en todos los 3er Milenio del pais.",
     title: "Con 1000 puntos",
     href: "https://www.3m.com.ar/3M/es_AR/inicio/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 2,
     image: "/assets/DS.PNG",
-    description:
-      "Accedes a 20% de descuento en Diamond System.",
+    description: "Accedes a 20% de descuento en Diamond System.",
     title: "Con 1500 puntos",
     href: "https://www.diamondcomputacion.com.ar",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 3,
     image: "/assets/Einstein.jpg",
-    description:
-      "Accedes a 30% de descuento en Libreria Einstein.",
+    description: "Accedes a 30% de descuento en Libreria Einstein.",
     title: "Con 2000 puntos",
     href: "https://einsteinlibreria.com.ar/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 4,
@@ -988,51 +986,46 @@ export const cardsDeBeneficios = [
     description: "Accedes a 30% de descuento en Supermercados CARREFOUR.",
     title: "Con 3000 puntos",
     href: "https://www.carrefour.com.ar/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 5,
     image: "/assets/coto.png",
-    description:
-    "Accedes a 30% de descuento en Supermercados COTO.",
+    description: "Accedes a 30% de descuento en Supermercados COTO.",
     title: "Con 3000 puntos",
     href: "https://www.coto.com.ar/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 6,
     image: "/assets/jumbo.jpg",
-    description:
-    "Accedes a 30% de descuento en Jumbo.",
+    description: "Accedes a 30% de descuento en Jumbo.",
     title: "Con 3000 puntos",
     href: "https://www.jumbo.com.ar/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 7,
     image: "/assets/multiplex.png",
-    description:
-    "Accede a entradas 2x1 en todos los cines Multiplex.",
+    description: "Accede a entradas 2x1 en todos los cines Multiplex.",
     title: "Con 3000 puntos",
     href: "https://www.multiplex.com.ar/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 8,
     image: "/assets/showcase.png",
-    description:
-      "Accede a entradas 2x1 en todos los cines Showcase.",
+    description: "Accede a entradas 2x1 en todos los cines Showcase.",
     title: "Con 3000 puntos",
     href: "https://www.cinemarkhoyts.com.ar/",
-    newblank:true,
+    newblank: true,
   },
   {
     id: 9,
     image: "/assets/cinemark.jpg",
-    description:
-      "Accede a entradas 2x1 en todos los cines Cinemark.",
+    description: "Accede a entradas 2x1 en todos los cines Cinemark.",
     title: "Con 3000 puntos",
     href: "https://www.cinemarkhoyts.com.ar/",
-    newblank:true,
+    newblank: true,
   },
 ];
