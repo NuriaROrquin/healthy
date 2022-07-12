@@ -1,5 +1,5 @@
 import Anchor, { AnchorGreen } from "../components/Anchor";
-import Button from "../components/Button";
+import Button, { ButtonGreen } from "../components/Button";
 import Card from "../components/Card";
 
 export const cardsTurnos = [
@@ -16,7 +16,7 @@ export const cardsTurnos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Crossfit</div>
             <p className="text-gray-400 text-base mb-1">
-              Día: <span className="font-bold text-teal">HOY</span>
+              Día: <span className="font-bold text-orange">HOY</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Horario: <span className="font-bold">19:45</span>
@@ -331,7 +331,7 @@ export const cardsNoticias = [
               Que esperas para sumarte?
             </h4>
           </div>
-          <Button>¡Quiero mi clase de natación!</Button>
+          <ButtonGreen>¡Quiero mi clase de natación!</ButtonGreen>
         </div>
       </div>
     ),
@@ -349,7 +349,7 @@ export const cardsNoticias = [
               Yoga fue la actividad favorita del mes de Junio.
             </h4>
           </div>
-          <Button>¡Quiero mi clase de yoga!</Button>
+          <ButtonGreen>¡Quiero mi clase de yoga!</ButtonGreen>
         </div>
       </div>
     ),
@@ -367,7 +367,7 @@ export const cardsNoticias = [
               No le des mas vueltas! Empezá ahora.
             </h4>
           </div>
-          <Button>¡Quiero un turno!</Button>
+          <ButtonGreen>¡Quiero un turno!</ButtonGreen>
         </div>
       </div>
     ),
@@ -383,7 +383,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">1-Julio</span>
+              <span className="font-bold text-orange">1-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Funcional</span>
@@ -413,7 +413,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">3-Julio</span>
+              <span className="font-bold text-orange">3-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Zumba</span>
@@ -443,7 +443,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">4-Julio</span>
+              <span className="font-bold text-orange">4-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -475,7 +475,7 @@ export const cardsTurnosHistoricos = [
               Miercoles
             </div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">5-Julio</span>
+              <span className="font-bold text-orange">5-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Natación</span>
@@ -505,7 +505,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Jueves</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">6-Julio</span>
+              <span className="font-bold text-orange">6-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -566,7 +566,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Sabado</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">8-Julio</span>
+              <span className="font-bold text-orange">8-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Funcional</span>
@@ -596,7 +596,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Lunes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">10-Julio</span>
+              <span className="font-bold text-orange">10-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Zumba</span>
@@ -626,7 +626,7 @@ export const cardsTurnosHistoricos = [
           <div>
             <div className="font-bold text-xl mb-2 text-gray-500">Martes</div>
             <p className="text-gray-400 text-base mb-1">
-              <span className="font-bold text-teal">11-Julio</span>
+              <span className="font-bold text-orange">11-Julio</span>
             </p>
             <p className="text-gray-400 text-base mb-1">
               Actividad: <span className="font-bold">Crossfit</span>
@@ -952,5 +952,87 @@ export const cardsDesafios = [
         noscale
       />
     ),
+  },
+];
+export const cardsDeBeneficios = [
+  {
+    id: 1,
+    image: "/assets/3m.png",
+    description:
+      "Accedes a 10% de descuento en todos los 3er Milenio del pais.",
+    title: "Con 1000 puntos",
+    href: "https://www.3m.com.ar/3M/es_AR/inicio/",
+    newblank:true,
+  },
+  {
+    id: 2,
+    image: "/assets/DS.PNG",
+    description:
+      "Accedes a 20% de descuento en Diamond System.",
+    title: "Con 1500 puntos",
+    href: "https://www.diamondcomputacion.com.ar",
+    newblank:true,
+  },
+  {
+    id: 3,
+    image: "/assets/Einstein.jpg",
+    description:
+      "Accedes a 30% de descuento en Libreria Einstein.",
+    title: "Con 2000 puntos",
+    href: "https://einsteinlibreria.com.ar/",
+    newblank:true,
+  },
+  {
+    id: 4,
+    image: "/assets/carrefour.png",
+    description: "Accedes a 30% de descuento en Supermercados CARREFOUR.",
+    title: "Con 3000 puntos",
+    href: "https://www.carrefour.com.ar/",
+    newblank:true,
+  },
+  {
+    id: 5,
+    image: "/assets/coto.png",
+    description:
+    "Accedes a 30% de descuento en Supermercados COTO.",
+    title: "Con 3000 puntos",
+    href: "https://www.coto.com.ar/",
+    newblank:true,
+  },
+  {
+    id: 6,
+    image: "/assets/jumbo.jpg",
+    description:
+    "Accedes a 30% de descuento en Jumbo.",
+    title: "Con 3000 puntos",
+    href: "https://www.jumbo.com.ar/",
+    newblank:true,
+  },
+  {
+    id: 7,
+    image: "/assets/multiplex.png",
+    description:
+    "Accede a entradas 2x1 en todos los cines Multiplex.",
+    title: "Con 3000 puntos",
+    href: "https://www.multiplex.com.ar/",
+    newblank:true,
+  },
+  {
+    id: 8,
+    image: "/assets/showcase.png",
+    description:
+      "Accede a entradas 2x1 en todos los cines Showcase.",
+    title: "Con 3000 puntos",
+    href: "https://www.cinemarkhoyts.com.ar/",
+    newblank:true,
+  },
+  {
+    id: 9,
+    image: "/assets/cinemark.jpg",
+    description:
+      "Accede a entradas 2x1 en todos los cines Cinemark.",
+    title: "Con 3000 puntos",
+    href: "https://www.cinemarkhoyts.com.ar/",
+    newblank:true,
   },
 ];

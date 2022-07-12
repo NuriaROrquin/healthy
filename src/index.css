@@ -100,15 +100,15 @@ form div.form-group select,
 form div.form-group option,
 form div.form-group input,
 form div.form-group .input-disabled {
-  @apply md:pl-2 block w-full text-base appearance-none focus:outline-none bg-transparent font-extralight text-teal;
+  @apply md:pl-2 block w-full text-base appearance-none focus:outline-none bg-transparent font-extralight text-orange;
 }
 
 form div.form-group i {
-  @apply absolute right-2 bottom-3 w-2 h-2 block border-l border-solid border-b border-teal transform -rotate-45 transition-all duration-150 ease-in-out;
+  @apply absolute right-2 bottom-3 w-2 h-2 block border-l border-solid border-b border-orange transform -rotate-45 transition-all duration-150 ease-in-out;
 }
 
 form div.form-group label {
-  @apply absolute top-0 z-10 duration-300 text-teal;
+  @apply absolute top-0 z-10 duration-300 text-orange;
 }
 
 form label.label-select,
@@ -119,15 +119,15 @@ form input:not(:placeholder-shown) ~ label {
 
 form input:focus-within ~ label,
 form select:focus-within ~ label {
-  @apply text-teal;
+  @apply text-orange;
 }
 
 form input:checked + svg {
   display: block;
 }
 
-.btn-teal {
-  @apply bg-teal border-white text-white hover:text-teal hover:border hover:border-teal;
+.btn-orange {
+  @apply bg-orange border-white text-white hover:text-orange hover:border hover:border-orange;
 }
 
 .container-login {
@@ -226,23 +226,23 @@ form input:checked + svg {
 }
 
 .react-datepicker__day--selecting-range-start {
-  @apply bg-white border-2 border-teal rounded-full;
+  @apply bg-white border-2 border-orange rounded-full;
 }
 
 .react-datepicker__day--selecting-range-end {
-  @apply bg-white border-2 border-teal rounded-full;
+  @apply bg-white border-2 border-orange rounded-full;
 }
 
 .react-datepicker__day--selected {
-  @apply bg-teal text-white rounded-full;
+  @apply bg-orange text-white rounded-full;
 }
 
 .react-datepicker__day--range-start {
-  @apply bg-teal text-white hover:text-gray-700 hover:bg-white rounded-full;
+  @apply bg-orange text-white hover:text-gray-700 hover:bg-white rounded-full;
 }
 
 .react-datepicker__day--range-end {
-  @apply bg-teal text-white hover:text-gray-700 hover:bg-white rounded-full;
+  @apply bg-orange text-white hover:text-gray-700 hover:bg-white rounded-full;
 }
 
 .react-datepicker__input-container input:disabled {
@@ -261,7 +261,7 @@ form input:checked + svg {
 }
 
 .react-datepicker__time-list-item--selected {
-  @apply bg-teal text-white;
+  @apply bg-orange text-white;
 }
 
 .react-datepicker__time-list-item {

@@ -15,7 +15,7 @@ export default function Login() {
           alt="Logo Healthy Care"
           className="w-28 md:w-32 2xl:w-40 mx-auto"
         />
-        <Titulo texto="Iniciar Sesión" color="text-teal" />
+        <Titulo texto="Iniciar Sesión" color="text-orange" />
         <form
           onSubmit={() => history("/home")}
           className="flex flex-col mt-4 justify-center items-center"
@@ -23,7 +23,7 @@ export default function Login() {
           <Input id="firstName" label="Email" type="email" required />
           <Input id="lastName" label="Contraseña" type="password" required />
 
-          <SubmitButton label="Ingresar" color="bg-teal mt-8" />
+          <SubmitButton label="Ingresar" color="bg-orange mt-8" />
         </form>
       </aside>
     </section>

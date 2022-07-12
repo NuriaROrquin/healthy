@@ -27,12 +27,12 @@ export default function Carrousel({ numeroDeCardsPorSlide, cards }) {
         }
         gutter={20}
         leftChevron={
-          <button className="rounded-full bg-teal w-8 absolute h-8 flex justify-center items-center">
+          <button className="rounded-full bg-greenAqua w-8 absolute h-8 flex justify-center items-center">
             <ChevronLeft />
           </button>
         }
         rightChevron={
-          <button className="rounded-full bg-teal w-8 absolute h-8 flex justify-center items-center">
+          <button className="rounded-full bg-greenAqua w-8 absolute h-8 flex justify-center items-center">
             <ChevronRight />
           </button>
         }

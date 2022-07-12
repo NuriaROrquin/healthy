@@ -9,7 +9,7 @@ export default function AnchorWhite({ children, href, newTab, disabled }) {
       disabled={disabled}
       className={`px-6 py-2 mt-4 ${
         href
-          ? "bg-white hover:bg-tealLight hover:text-white text-teal"
+          ? "bg-white hover:bg-tealLight hover:text-white text-orange"
           : "bg-gray-300 cursor-default"
       } self-end rounded-md max-w-xs transition`}
     >
@@ -26,7 +26,7 @@ export function AnchorGreen({ children, href, newTab, disabled }) {
       rel="noopener noreferrer"
       className={`px-6 py-2 mt-4 ${
         href
-          ? "bg-teal hover:bg-white hover:border hover:border-teal hover:text-teal "
+          ? "bg-orange hover:bg-white hover:border hover:border-orange hover:text-orange "
           : "bg-gray-300 cursor-default"
       } rounded-md text-white max-w-xs w-max transition box-border`}
     >

@@ -26,13 +26,11 @@ export default function PieGraph({ data, title }) {
       plotBorderWidth: null,
       plotShadow: false,
       type: "pie",
-      height: "100%",
-      margin: [-20, 0, 0, 0],
     },
     title: {
       text: title,
       style: {
-        color: "#95c89a",
+        color: "#f5a051",
         fontWeight: "bold",
         fontSize: "1.5rem",
       },

@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function Card({ image, description, title, href, noscale }) {
+export default function Card({ image, description, title, href, noscale, newblank }) {
   return (
-    <a href={href}>
+    <a href={href} target={newblank && "_blank"}>
       <div
-        className={`max-w-sm min-h-96 bg-teal rounded-lg border border-gray-200 ${
+        className={`max-w-sm min-h-96 bg-orange rounded-lg border border-gray-200 ${
           !noscale && "hover:scale-110"
         } transition-all overflow-hidden shadow-xl`}
       >
-        <div className="h-60 w-96">
+        <div className="h-60">
           <img
             className="rounded-t-lg h-full object-cover w-full"
             src={image}

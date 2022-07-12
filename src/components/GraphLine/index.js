@@ -22,7 +22,7 @@ export default function GraphLine({ titulo, series }) {
     title: {
       text: titulo,
       style: {
-        color: "#95c89a",
+        color: "#f5a051",
         fontWeight: "bold",
         fontSize: "1.5rem",
       },
@@ -46,7 +46,7 @@ export default function GraphLine({ titulo, series }) {
     },
     plotOptions: {
       series: {
-        color: "#49a099",
+        color: "#49A099",
         showInLegend: false,
         pointIntervalUnit: "month",
         line: {
@@ -87,7 +87,7 @@ export default function GraphLine({ titulo, series }) {
           smoothed: false,
         },
         lineWidth: 2,
-        lineColor: "#49a099",
+        lineColor: "#49A099",
         fillColor: {
           linearGradient: {
             x1: 0,
