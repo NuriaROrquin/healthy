@@ -236,8 +236,6 @@ export default function CommercialHome() {
           </div>
         </div>
       </SectionContainer>
-
-      <Footer />
     </BodyContainer>
   );
 }
