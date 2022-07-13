@@ -56,7 +56,7 @@ export default function Footer() {
                 <img className="h-6" src="/assets/youtube.png" alt="Youtube" />
               </a>
               <img className="h-6" src="/assets/tiktok.png" alt="TikTok" />
-              <img className="h-6" src="/assets/linkedin.png" alt="LinkedIn" />
+              <img className="h-6" src="/assets/linked-in.png" alt="LinkedIn" />
             </div>
           </div>
         </div>
