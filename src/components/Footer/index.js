@@ -55,8 +55,16 @@ export default function Footer() {
               <a href="https://www.youtube.com/">
                 <img className="h-6" src="/assets/youtube.png" alt="Youtube" />
               </a>
-              <img className="h-6" src="/assets/tiktok.png" alt="TikTok" />
-              <img className="h-6" src="/assets/linked-in.png" alt="LinkedIn" />
+              <a href="https://www.tiktok.com/">
+                <img className="h-6" src="/assets/tiktok.png" alt="TikTok" />
+              </a>
+              <a href="https://www.linkedin.com/">
+                <img
+                  className="h-6"
+                  src="/assets/linked-in.png"
+                  alt="LinkedIn"
+                />
+              </a>
             </div>
           </div>
         </div>
