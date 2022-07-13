@@ -940,46 +940,70 @@ export const profesores = [
 
 export const actividades = [
   {
-    value: 1,
+    value: "Natación",
     label: "Natación",
   },
   {
-    value: 2,
+    value: "Gimnasio",
     label: "Gimnasio",
+  },
+  {
+    value: "AquaGym",
+    label: "AquaGym",
+  },
+  {
+    value: "Spinning",
+    label: "Spinning",
+  },
+  {
+    value: "CrossFit",
+    label: "CrossFit",
+  },
+  {
+    value: "Funcional",
+    label: "Funcional",
+  },
+  {
+    value: "Zumba",
+    label: "Zumba",
+  },
+  {
+    value: "Yoga",
+    label: "Yoga",
   },
 ];
 
 export const sedesDeNatacion = [
   {
-    value: 1,
+    value: "Gimnasio CAEP",
     label: "Gimnasio CAEP",
   },
   {
-    value: 2,
+    value: "Gimnasio Comunicaciones",
     label: "Gimnasio Comunicaciones",
   },
   {
-    value: 3,
+    value: "Gimnasio CGEVP",
     label: "Gimnasio CGEVP",
   },
   {
-    value: 4,
+    value: "Gimnasio Megatlon",
     label: "Gimnasio Megatlon",
   },
   {
-    value: 5,
+    value: "Gimnasio SportClub",
     label: "Gimnasio SportClub",
   },
   {
-    value: 6,
+    value: "Gimnasio Open Park",
     label: "Gimnasio Open Park",
   },
   {
-    value: 7,
+    value: "Gimnasio UNLaM",
     label: "Gimnasio UNLaM",
   },
   {
-    value: 8,
+    value: "Gimnasio Brisas",
     label: "Gimnasio Brisas",
   },
 ];
@@ -1077,7 +1101,7 @@ export const cardsDesafios = [
     id: 3,
     card: (
       <Card
-        image="/assets/natacion.webp"
+        image="/assets/natacion.jpeg"
         description="¡Felicitaciones! Concretaste 15 clases de natacion en este mes."
         title="Desafio: Natacion Intermedio"
         noscale

@@ -18,6 +18,10 @@ module.exports = {
         natacion: "url('/public/assets/natacion2.jpg')",
         yoga: "url('/public/assets/banner-yoga.png')",
         gym: "url('/public/assets/banner-gym.png')",
+        estudiantilportenio: "url('/public/assets/bg-estudiantilportenio.jpg')",
+        sportclub: "url('/public/assets/bg-sportclub.jpg')",
+        openpark: "url('/public/assets/openpark-bg.jpeg')",
+        megatlon: "url('/public/assets/megatlon-bg.jpeg')",
       }),
       fontFamily: {
         "cairo-bold": "cairo-bold",

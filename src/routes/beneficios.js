@@ -12,25 +12,31 @@ export default function Beneficios() {
     <BodyContainer>
       <Nav />
       <SectionContainer>
-        <h2 className="text-center mb-24 text-5xl text-teal font-cairo-bold mt-10">
-          ¡Descuentos imperdibles canjeando tus puntos!
-        </h2>
-        <div className="flex justify-around flex-wrap gap-2 gap-y-24">
-          {cardsDeBeneficios.map((actividad) => {
-            return (
-              <Card
-                key={actividad.id}
-                image={actividad.image}
-                description={actividad.description}
-                title={actividad.title}
-                href={actividad.href}
-                newblank={actividad.newblank}
-              />
-            );
-          })}
-          <h3 className="text-center mb-24 text-3xl ">
-            Descuentos imperdibles canjeando tus puntos!
-          </h3>
+        <div className="pt-24">
+          <TituloSeccion
+            texto="¡Descuentos imperdibles canjeando tus puntos!"
+            color="text-greenAqua"
+          />
+          <div className="flex flex-wrap justify-between gap-y-12 pt-12">
+            {cardsDeBeneficios.map((actividad) => {
+              return (
+                <div className="max-w-xs">
+                  <Card
+                    id={actividad.id}
+                    key={actividad.id}
+                    image={actividad.image}
+                    description={actividad.description}
+                    title={actividad.title}
+                    href={actividad.href}
+                    newblank={actividad.newblank}
+                  />
+                </div>
+              );
+            })}
+            <h3 className="text-center mb-24 text-3xl ">
+              Descuentos imperdibles canjeando tus puntos!
+            </h3>
+          </div>
         </div>
       </SectionContainer>
     </BodyContainer>

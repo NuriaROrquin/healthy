@@ -45,6 +45,7 @@ export default function PieGraph({ data, title }) {
         cursor: "pointer",
         dataLabels: {
           enabled: true,
+          connectorColor: Highcharts.getOptions().colors[0],
           format: "<b>{point.name}</b>: {point.percentage:.1f} %",
         },
       },

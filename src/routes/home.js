@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <BodyContainer>
       <div className="pt-12">
-        <SectionContainer>
+        <SectionContainer title="Noticias">
           <div className="flex">
             <TituloSeccion color="text-greenAqua" texto="Noticias" />
           </div>
           <Carrousel cards={cardsNoticias} numeroDeCardsPorSlide={1} />
         </SectionContainer>
 
-        <SectionContainer color="bg-orange">
+        <SectionContainer title="Hola Michael!" color="bg-orange">
           <div className="flex">
             <TituloSeccion color="text-white" texto="Hola Michael!" />
           </div>
@@ -68,21 +68,21 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center items-center my-2">
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-gray-400 text-sm text-center leading-6">
                   Puntos recolectados esta semana:{" "}
                 </p>
                 <span className="text-orange font-cairo-bold">95 puntos</span>
               </div>
 
               <div className="flex flex-col justify-center items-center my-2">
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-gray-400 text-sm text-center leading-6">
                   Puntos recolectados en el mes actual:{" "}
                 </p>
                 <span className="text-orange font-cairo-bold">342 puntos</span>
               </div>
 
               <div className="flex flex-col justify-center items-center my-2">
-                <p className="text-gray-400 text-sm text-center">
+                <p className="text-gray-400 text-sm text-center leading-6">
                   Puntos pendientes de acreditación:{" "}
                 </p>
                 <span className="text-orange font-cairo-bold">119 puntos</span>
@@ -118,14 +118,14 @@ export default function Home() {
           </div>
         </SectionContainer>
 
-        <SectionContainer>
+        <SectionContainer title="Tus proximos turnos">
           <div className="flex">
             <TituloSeccion color="text-greenAqua" texto="Tus proximos turnos" />
           </div>
           <Carrousel cards={cardsTurnos} numeroDeCardsPorSlide={4} />
         </SectionContainer>
 
-        <SectionContainer>
+        <SectionContainer title="¡Conocé todas las actividades que tenemos para vos!">
           <h2 className="text-center mb-24 text-5xl text-greenAqua font-cairo-bold">
             ¡Conocé todas las actividades que tenemos para vos!
           </h2>

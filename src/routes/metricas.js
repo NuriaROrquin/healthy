@@ -52,14 +52,14 @@ export default function Metricas() {
   return (
     <BodyContainer>
       <div className="pt-12">
-        <SectionContainer>
+        <SectionContainer title="Desafios">
           <div className="flex">
             <TituloSeccion color="text-greenAqua mb-4" texto="Desafios" />
           </div>
 
           <Carrousel cards={cardsDesafios} numeroDeCardsPorSlide={3} />
         </SectionContainer>
-        <SectionContainer>
+        <SectionContainer title="Métricas">
           <div className="flex">
             <TituloSeccion color="text-greenAqua" texto="Métricas" />
           </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import { ChevronLeft } from "../../icons/chevronLeft";
 import { ChevronRight } from "../../icons/chevronRight";
+import { v4 as uuid } from "uuid";
 
 export default function Carrousel({
   numeroDeCardsPorSlide,
@@ -36,12 +37,20 @@ export default function Carrousel({
         }
         gutter={20}
         leftChevron={
-          <button className="rounded-full bg-greenAqua w-8 absolute h-8 flex justify-center items-center">
+          <button
+            value="Arrow Left"
+            aria-label="Arrow Left"
+            className="rounded-full bg-greenAqua w-8 absolute h-8 flex justify-center items-center"
+          >
             <ChevronLeft />
           </button>
         }
         rightChevron={
-          <button className="rounded-full bg-greenAqua w-8 absolute h-8 flex justify-center items-center">
+          <button
+            value="Arrow Right"
+            aria-label="Arrow Right"
+            className="rounded-full bg-greenAqua w-8 absolute h-8 flex justify-center items-center"
+          >
             <ChevronRight />
           </button>
         }
@@ -49,8 +58,8 @@ export default function Carrousel({
         chevronWidth={chevronWidth}
         infiniteLoop={false}
       >
-        {cards.map((item, key) => {
-          return <div id={key}>{item.card}</div>;
+        {cards.map((item) => {
+          return <div id={`carousel-${uuid()}`}>{item.card}</div>;
         })}
       </ItemsCarousel>
     </div>

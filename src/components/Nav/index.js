@@ -33,22 +33,35 @@ export default function Nav({ openMenu, setOpenMenu }) {
                 >
                   X
                 </button>
-                <ul className="flex w-full h-full justify-around items-center text-white font-cairo-semibold top-12">
+                <ul
+                  role="list"
+                  className="flex w-full h-full justify-around items-center text-white font-cairo-semibold top-12"
+                >
                   <div className="flex flex-col justify-between w-full h-full items-center py-6">
-                    <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                    <li
+                      role="listitem"
+                      className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                    >
                       <a href="/">Nosotros</a>
                     </li>
-                    <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                    <li
+                      role="listitem"
+                      className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                    >
                       <a href="/">Actividades</a>
                     </li>
 
                     <div className="flex flex-col justify-center items-center gap-y-4">
-                      <li className="flex items-center h-full">
-                        <a href="/login">
+                      <li role="listitem" className="flex items-center h-full">
+                        <a
+                          href="/login"
+                          alt="Acceder al usuario"
+                          aria-label="Acceder al usuario"
+                        >
                           <User />
                         </a>
                       </li>
-                      <li className="flex items-center h-full">
+                      <li role="listitem" className="flex items-center h-full">
                         <ButtonGreen>Registrarse</ButtonGreen>
                       </li>
                     </div>
@@ -56,7 +69,10 @@ export default function Nav({ openMenu, setOpenMenu }) {
                 </ul>
               </nav>
               <nav className="flex px-4 justify-center bg-greenAqua w-full h-24 fixed z-20 mb-4">
-                <ul className="flex max-w-7xl justify-between h-24 text-white font-cairo-semibold w-full relative items-center">
+                <ul
+                  role="list"
+                  className="flex max-w-7xl justify-between h-24 text-white font-cairo-semibold w-full relative items-center"
+                >
                   <button type="button" onClick={() => setOpenMenu(!openMenu)}>
                     <Burguer />
                   </button>
@@ -89,27 +105,42 @@ export default function Nav({ openMenu, setOpenMenu }) {
                 </button>
                 <ul className="flex w-full h-full justify-around items-center text-white font-cairo-semibold top-12">
                   <div className="flex flex-col justify-between w-full h-full items-center">
-                    <li className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full">
+                    <li
+                      role="listitem"
+                      className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full"
+                    >
                       <a href="/home">Home</a>
                     </li>
-                    <li className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full">
+                    <li
+                      role="listitem"
+                      className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full"
+                    >
                       <a href="/metricas">Metricas</a>
                     </li>
-                    <li className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full">
+                    <li
+                      role="listitem"
+                      className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full"
+                    >
                       <a href="/turnos">Turnos</a>
                     </li>
-                    <li className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full">
+                    <li
+                      role="listitem"
+                      className="hover:text-2xl bg-opacity-0 p-4 h-1/2 items-center flex justify-center transition rounded-lg text-xl w-full"
+                    >
                       <a href="/beneficios">Beneficios</a>
                     </li>
                   </div>
                 </ul>
               </nav>
               <nav className="flex px-4 justify-center bg-greenAqua w-full h-24 fixed z-20 mb-4">
-                <ul className="flex max-w-7xl w-full justify-between h-24 text-white font-cairo-semibold">
+                <ul
+                  role="list"
+                  className="flex max-w-7xl w-full justify-between h-24 text-white font-cairo-semibold"
+                >
                   <button type="button" onClick={() => setOpenMenu(!openMenu)}>
                     <Burguer />
                   </button>
-                  <li className="flex items-center h-full">
+                  <li role="listitem" className="flex items-center h-full">
                     <a href="/user">
                       <img
                         src="/assets/user.jpeg"
@@ -126,9 +157,15 @@ export default function Nav({ openMenu, setOpenMenu }) {
       ) : (
         <nav className="flex px-4 justify-center bg-greenAqua w-full h-24 fixed z-50 mb-4">
           {location.pathname === "/" ? (
-            <ul className="flex max-w-7xl w-full justify-around items-center text-white font-cairo-semibold h-full">
+            <ul
+              role="list"
+              className="flex max-w-7xl w-full justify-around items-center text-white font-cairo-semibold h-full"
+            >
               <div className="flex justify-start w-1/4 h-full items-center gap-x-12 pr-12">
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/">
                     <img
                       src="/assets/logo-blanco.png"
@@ -140,43 +177,68 @@ export default function Nav({ openMenu, setOpenMenu }) {
               </div>
 
               <div className="flex justify-end w-2/4 h-full items-center gap-x-12 pr-12">
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/">Nosotros</a>
                 </li>
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/">Actividades</a>
                 </li>
               </div>
 
               <div className="flex gap-x-8 items-center justify-center">
-                <li className="flex w-full">
-                  <a href="/login">
+                <li role="listitem" className="flex w-full">
+                  <a
+                    href="/login"
+                    alt="Acceder al usuario"
+                    aria-label="Acceder al usuario"
+                  >
                     <User />
                   </a>
                 </li>
-                <li className="flex w-full">
+                <li role="listitem" className="flex w-full">
                   <ButtonGreen>Registrarse</ButtonGreen>
                 </li>
               </div>
             </ul>
           ) : (
-            <ul className="flex max-w-7xl w-full justify-around items-center text-white font-cairo-semibold h-full">
+            <ul
+              role="list"
+              className="flex max-w-7xl w-full justify-around items-center text-white font-cairo-semibold h-full"
+            >
               <div className="flex justify-between w-3/4 h-full items-center">
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/home">Home</a>
                 </li>
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/metricas">Metricas</a>
                 </li>
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/turnos">Turnos</a>
                 </li>
-                <li className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg">
+                <li
+                  role="listitem"
+                  className="hover:scale-125 w-max p-4 h-1/2 items-center flex justify-center transition rounded-lg"
+                >
                   <a href="/beneficios">Beneficios</a>
                 </li>
               </div>
 
-              <li className="flex w-full justify-end">
+              <li role="listitem" className="flex w-full justify-end">
                 <a href="/user">
                   <img
                     src="/assets/user.jpeg"
