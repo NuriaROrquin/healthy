@@ -9,7 +9,7 @@ export default function DropDownButton({
   className,
 }) {
   return (
-    <div class={`max-w-2xl mx-auto ${className}`}>
+    <div class={`max-w-2xl mx-auto ${className} lg:mt-4`}>
       <label
         for={label}
         class="block mb-2 text-sm font-semibold text-gray-500 "
@@ -19,7 +19,7 @@ export default function DropDownButton({
         <select
           id={label}
           disabled={disabled}
-          className="bg-white border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-orange focus:border-orange block w-full p-2.5 items-center justify-center outline-none disabled:bg-[#efefef] disabled:bg-opacity-60 disabled:border disabled:border-[#767676] disabled:border-opacity-30 disabled:text-gray-600"
+          className="bg-white border border-gray-300 text-black font-cairo-light text-sm rounded-lg focus:ring-orange focus:border-orange block w-full p-2.5 items-center justify-center outline-none disabled:bg-[#efefef] disabled:bg-opacity-60 disabled:border disabled:border-[#767676] disabled:border-opacity-30 disabled:text-gray-600"
           onChange={(e) => setOption(e)}
         >
           <option selected>{firstOption}</option>
