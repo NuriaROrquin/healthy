@@ -17,7 +17,7 @@ export default function Beneficios() {
             texto="¡Descuentos imperdibles canjeando tus puntos!"
             color="text-greenAqua"
           />
-          <div className="flex flex-wrap justify-between gap-y-12 pt-12">
+          <div className="flex flex-wrap justify-center lg:justify-between gap-y-12 pt-12">
             {cardsDeBeneficios.map((actividad) => {
               return (
                 <div className="max-w-xs">
